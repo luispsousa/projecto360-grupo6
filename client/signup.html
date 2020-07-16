@@ -10,10 +10,37 @@
 
   <body>
     <header>
-      <nav>
-        
+      <nav class="navbar">
+        <img src="/images/logos/logo-negativo.png" alt="Shop in Porto Logo">
+        <div class="navbar-icons">
+          <img src="/images/icons/search-icon.png" alt="Search icon">
+          <img src="/images/icons/menu-icon.png" alt="Menu icon">
+        </div>
       </nav>
     </header>
+    <main>
+      <div class="container-signup gridrow">
+        <p>Entrar</p>
+        <p>Criar Conta</p>
+      </div>
+      <div class="gridrow">
+        <form class="form-signup">
+          <label for="name">Nome:</label>
+          <input id="name" type="text">
+          
+          <label for="email">E-mail:</label>
+          <input id="email" type="email">
+          
+          <label for="password">Password:</label>
+          <input id="password" type="password">
+          
+          <input type="checkbox" id="termsNcondicions">
+          <label for="termsNcondicions">Eu aceito os <a href="#">Termos de Uso</a> e <a href="#">Políticas Privadas</a></label>
+          
+          <button class="btn-signup">criar conta</button>
+        </form>
+      </div>
+    </main>
     <script src="./js/main.js"></script>
   </body>
 

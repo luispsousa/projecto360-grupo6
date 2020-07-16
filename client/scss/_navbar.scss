@@ -1,0 +1,24 @@
+.navbar {
+  background-color: $primary;
+  min-height: 100px;
+  text-align: center;
+  position: sticky;
+
+  > img {
+    width: 150px;
+    height: auto;
+  }
+
+  .navbar-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 34.5px;
+    right: 5%;
+
+    img:first-child {
+      margin-right: 1rem;
+    }
+  }
+}

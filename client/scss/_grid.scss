@@ -15,7 +15,7 @@
 .gridrowfull, .gridrow{
     display: flex;
     flex-wrap: wrap;
-    .col{
+    .col {
         flex: 1;
         box-sizing: border-box;
         padding-left: $gridgutter / 2;

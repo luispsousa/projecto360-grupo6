@@ -1,8 +1,18 @@
+@import 'fonts';
 @import 'normalize';
 @import 'variables';
 @import 'utils';
 @import 'grid';
+@import 'navbar';
+
+// Import pages
+@import 'signup';
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  color: $text;
+  font-family: $bodyfont, sans-serif;
 }
