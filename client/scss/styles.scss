@@ -4,6 +4,7 @@
 @import 'utils';
 @import 'grid';
 @import 'navbar';
+@import 'bottom-nav';
 
 // Import pages
 @import 'signup';
@@ -15,4 +16,20 @@
 body {
   color: $text;
   font-family: $bodyfont, sans-serif;
+  background-color: $background;
 }
+
+//TODO - MEDIA QUERY
+main {
+  margin-top: 7rem;
+}
+
+a { 
+  color: inherit;
+  text-decoration: none;
+} 
+
+button {
+  border: none;
+}
+

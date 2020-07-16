@@ -1,8 +1,11 @@
 .navbar {
   background-color: $primary;
-  min-height: 100px;
+  height: 100px;
   text-align: center;
-  position: sticky;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 
   > img {
     width: 150px;

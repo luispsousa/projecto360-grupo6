@@ -3,23 +3,48 @@
   justify-content: space-between;
   align-items: center;
   color: $secondary;
+  padding: 1rem 0;
 
-  p {
+  a {
     font-size: 20px;
   
     &:last-child {
       font-weight: bold;
+      border-bottom: 2px $pink solid;
+      padding-bottom: .2rem;
     }
   }
-
 }
 
 .form-signup {
-  input {
+  label {
+    padding-left: 16px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .input-signup {
     width: 100%;
+    padding: 13px 0 13px 16px;
+    margin-bottom: 1rem;
+    border: 2px solid $primary;
+    border-radius: 4px;
+  }
+
+  .container-terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
   }
 
   .btn-signup {
     width: 100%;
+    background: $primary;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+    padding: 1rem 0;
   }
 }

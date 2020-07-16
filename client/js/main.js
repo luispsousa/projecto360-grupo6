@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Handler when the DOM is fully loaded~
-  fetchStores();
+  /* fetchStores(); */
 });
 
 const fetchStores = (nProducts, sortBy) => {
