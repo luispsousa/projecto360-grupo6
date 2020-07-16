@@ -2,3 +2,7 @@
 @import 'variables';
 @import 'utils';
 @import 'grid';
+
+* {
+  box-sizing: border-box;
+}

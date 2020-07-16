@@ -1301,4 +1301,8 @@ template {
 .gridrowfull.nogutter .col-12, .gridrowfull.nogutter .col-t-12, .gridrowfull.nogutter .col-d-12, .gridrow.nogutter .col-12, .gridrow.nogutter .col-t-12, .gridrow.nogutter .col-d-12 {
   padding: 0;
 }
+
+* {
+  box-sizing: border-box;
+}
 /*# sourceMappingURL=styles.css.map */
