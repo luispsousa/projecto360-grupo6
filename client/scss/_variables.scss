@@ -3,13 +3,25 @@ $titlesfontweights: "400;600";
 $bodyfont: "Roboto";
 $bodyfontweights: "400";
 
-$primary: #f5d71f;
-$secondary: #ff7425;
-$graydark: #333;
-$gray: #747474;
-$graylight: #F3F3F3;
+// Colors
+$primary: #1EA0C8;
+$secondary: #10324F;
+$background: #F8F8F8;
+$text: #222222;
+$error: #DC4949;
+$sucess: #9BC861;
+$disabled: #A6A7A8;
+$novato: #9BC861;
+$conhecedor: #AE88FF;
+$especialista: #F1AA68;
+$s-especialista: #689FF1;
+$top: #375DE1;
 $white: #FFF;
 $black: #000;
+
+// Shadows
+$box-shadow: 0px -3px 7px #DADADA;
+$cards-shadow: 0px 2px 2px rgba(166, 167, 168, 0.48);
 
 $animationtime: 0.4s;
 
