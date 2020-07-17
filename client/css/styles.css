@@ -1521,6 +1521,45 @@ template {
   line-height: 24px;
 }
 
+#homepage .hero {
+  position: relative;
+}
+
+#homepage .hero > img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+#homepage .hero .hero-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#homepage .hero .hero-hover h1 {
+  color: white;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 0;
+}
+
+#homepage .glide {
+  margin-top: 1rem;
+}
+
+#homepage .glide .glide__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #signup-page .container-signup {
   justify-content: space-between;
   align-items: center;
@@ -1666,16 +1705,13 @@ body {
   color: #222222;
   font-family: "Regular", sans-serif;
   background-color: #F8F8F8;
-}
-
-body {
   /* Margin because of the fixed navigations in mobile */
-  margin: 7rem 0;
+  margin: 6.25rem 0;
 }
 
 @media (min-width: 750px) {
   body {
-    margin-top: 7rem;
+    margin-top: 6.25rem;
     margin-bottom: 0;
   }
 }

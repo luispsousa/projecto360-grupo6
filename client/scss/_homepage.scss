@@ -1,0 +1,39 @@
+#homepage {
+  .hero {
+    position: relative;
+    > img {
+      width: 100%;
+      height: 40vh;
+      object-fit: cover;
+    }
+
+    .hero-hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        color: white;
+        font-size: 34px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .glide {
+    margin-top: 1rem;
+
+    .glide__slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

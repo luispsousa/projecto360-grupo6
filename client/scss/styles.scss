@@ -10,6 +10,7 @@
 @import 'footer';
 
 // Pages
+@import 'homepage';
 @import 'signup';
 
 * {
@@ -20,14 +21,11 @@ body {
   color: $text;
   font-family: $bodyfont, sans-serif;
   background-color: $background;
-}
-
-body {
   /* Margin because of the fixed navigations in mobile */
-  margin: 7rem 0;
+  margin: 6.25rem 0;
 
   @media(min-width: $tablet){
-    margin-top: 7rem;
+    margin-top: 6.25rem;
     margin-bottom: 0;
   }
 }
