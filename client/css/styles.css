@@ -1368,12 +1368,16 @@ template {
 
 #navbar {
   background-color: #1EA0C8;
+  color: #FFF;
   height: 100px;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #navbar > img {
@@ -1381,17 +1385,60 @@ template {
   height: auto;
 }
 
-#navbar .navbar-icons {
+#navbar .navbar-links-left {
+  display: none;
+  position: absolute;
+  left: 5%;
+}
+
+#navbar .navbar-links-left > li:not(:first-child) {
+  margin-left: 3rem;
+}
+
+#navbar .navbar-links-right {
   display: flex;
-  justify-content: center;
   align-items: center;
   position: absolute;
-  top: 34.5px;
   right: 5%;
 }
 
-#navbar .navbar-icons img:first-child {
-  margin-right: 1rem;
+#navbar #language {
+  display: none;
+}
+
+#navbar .signup-text {
+  display: none;
+}
+
+#navbar .signup-text span {
+  margin: .2rem;
+}
+
+#navbar .signup-text img {
+  margin-left: .5rem;
+}
+
+#navbar .menu-icon {
+  margin-left: 1rem;
+}
+
+@media (min-width: 750px) {
+  #navbar .navbar-links-right > *:not(:first-child) {
+    margin-left: 2rem;
+  }
+  #navbar #language {
+    display: inline-block;
+  }
+  #navbar .signup-text {
+    display: flex;
+    align-items: center;
+  }
+  #navbar .navbar-links-left {
+    display: flex;
+  }
+  #navbar .menu-icon {
+    display: none;
+  }
 }
 
 .bottom-navigation {
@@ -1475,7 +1522,6 @@ template {
 }
 
 #signup-page .container-signup {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   color: #10324F;
@@ -1486,10 +1532,29 @@ template {
   font-size: 20px;
 }
 
-#signup-page .container-signup a:last-child {
+#signup-page .container-signup a:last-of-type {
   font-weight: bold;
   border-bottom: 2px #EC0A84 solid;
   padding-bottom: .2rem;
+}
+
+#signup-page .container-signup h1 {
+  font-size: 48px;
+  font-weight: normal;
+  text-transform: uppercase;
+  display: none;
+}
+
+@media (min-width: 750px) {
+  #signup-page .container-signup {
+    justify-content: center;
+  }
+  #signup-page .container-signup a {
+    display: none;
+  }
+  #signup-page .container-signup h1 {
+    display: block;
+  }
 }
 
 #signup-page .form-signup {
@@ -1618,6 +1683,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .btn {

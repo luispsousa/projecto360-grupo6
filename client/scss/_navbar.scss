@@ -1,27 +1,78 @@
 #navbar {
   background-color: $primary;
+  color: $white;
   height: 100px;
   text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   > img {
     width: 150px;
     height: auto;
   }
 
-  .navbar-icons {
+  .navbar-links-left {
+    display: none;
+    position: absolute;
+    left: 5%;
+
+    > li:not(:first-child) {
+      margin-left: 3rem;
+    }
+  }
+
+  .navbar-links-right {
     display: flex;
-    justify-content: center;
     align-items: center;
     position: absolute;
-    top: 34.5px;
     right: 5%;
+  }
 
-    img:first-child {
-      margin-right: 1rem;
+  #language {
+    display: none;
+  }
+
+  .signup-text {
+    display: none;
+
+    span {
+      margin: .2rem;
+    }
+
+    img {
+      margin-left: .5rem;
+    }
+  }
+
+  .menu-icon {
+    margin-left: 1rem;
+  }
+
+  @media(min-width: $tablet) {
+    .navbar-links-right > *:not(:first-child) {
+      margin-left: 2rem;
+    }
+
+    #language {
+      display: inline-block;
+    }
+
+    .signup-text {
+        display: flex;
+        align-items: center;
+      }
+
+    .navbar-links-left {
+      display: flex;
+    }
+    
+    .menu-icon {
+      display: none;
     }
   }
 }

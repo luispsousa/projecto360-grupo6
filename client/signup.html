@@ -14,10 +14,30 @@
     <!-- ******************** -->
     <header>
       <nav id="navbar">
-        <img src="/images/logos/logo-negativo.png" alt="Shop in Porto Logo">
-        <div class="navbar-icons">
+        
+        <ul class="navbar-links-left">
+          <li>Lojas</li>
+          <li>Mapa</li>
+          <li>Comunidade</li>
+        </ul>
+        
+        <img src="/images/logos/logo-negativo.png" alt="Shop in Porto Logo" class="navbar-logo">
+        
+        <div class="navbar-links-right">
           <img src="/images/icons/search-icon.png" alt="Search icon">
-          <img src="/images/icons/menu-icon.png" alt="Menu icon">
+          <div>
+            <select name="language" id="language">
+              <option value="pt" selected>PT</option>
+              <option value="en">EN</option>
+            </select>
+          </div>
+          <div class="signup-text">
+            <a href="#">Criar conta</a> 
+            <span> / </span> 
+            <a href="#">Iniciar sessão</a>
+            <img src="/images/icons/person-icon.png" alt="Person Icon">
+          </div>
+          <img src="/images/icons/menu-icon.png" alt="Menu icon" class="menu-icon">
         </div>
       </nav>
     </header>
@@ -28,6 +48,7 @@
       <div class="container-signup gridrow">
         <a href="#">Entrar</a>
         <a href="#">Criar Conta</a>
+        <h1>Criar Conta</h1>
       </div>
       <div class="gridrow">
         <form class="form-signup">

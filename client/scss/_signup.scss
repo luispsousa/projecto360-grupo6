@@ -1,18 +1,30 @@
 #signup-page {
   .container-signup {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     color: $secondary;
     padding: 1rem 0;
-
     a {
       font-size: 20px;
-    
-      &:last-child {
+      &:last-of-type {
         font-weight: bold;
         border-bottom: 2px $pink solid;
         padding-bottom: .2rem;
+      }
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: normal;
+      text-transform: uppercase;
+      display: none;
+    }
+    @media(min-width: $tablet){
+      justify-content: center; 
+      a {
+        display: none;
+      }
+      h1 {
+        display: block;
       }
     }
   }
