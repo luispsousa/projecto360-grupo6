@@ -75,6 +75,7 @@
   .external-signup {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 
     .btn-facebook {
       background: $facebook!important;
@@ -91,8 +92,13 @@
   }
 
   .container-intro {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
     align-items: center;
+    display: none;
+
+    @media(min-width: $tablet){
+      display: flex;
+    }
 
     img {
       max-width: 100%;

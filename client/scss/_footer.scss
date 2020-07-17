@@ -1,0 +1,37 @@
+#footer {
+  display: none;
+
+  @media(min-width: $tablet){
+    display: block;
+  }
+
+  .footer-newsletter {
+    background: $primary;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 2rem;
+
+    p {
+      color: $white;
+      font-size: 20px;
+    }
+  }
+
+  .footer-links {
+    justify-content: center;
+    margin-top: 1rem;
+
+    h3 {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

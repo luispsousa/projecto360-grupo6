@@ -910,7 +910,7 @@ template {
 }
 
 .gridrowfull {
-  width: 90%;
+  width: 100%;
 }
 
 .gridrow {
@@ -1366,7 +1366,7 @@ template {
   padding: 0;
 }
 
-.navbar {
+#navbar {
   background-color: #1EA0C8;
   height: 100px;
   text-align: center;
@@ -1376,12 +1376,12 @@ template {
   right: 0;
 }
 
-.navbar > img {
+#navbar > img {
   width: 150px;
   height: auto;
 }
 
-.navbar .navbar-icons {
+#navbar .navbar-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1390,7 +1390,7 @@ template {
   right: 5%;
 }
 
-.navbar .navbar-icons img:first-child {
+#navbar .navbar-icons img:first-child {
   margin-right: 1rem;
 }
 
@@ -1432,6 +1432,46 @@ template {
   .bottom-navigation {
     display: none;
   }
+}
+
+#footer {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  #footer {
+    display: block;
+  }
+}
+
+#footer .footer-newsletter {
+  background: #1EA0C8;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0 2rem;
+}
+
+#footer .footer-newsletter p {
+  color: #FFF;
+  font-size: 20px;
+}
+
+#footer .footer-links {
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+#footer .footer-links h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#footer .footer-links ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 #signup-page .container-signup {
@@ -1515,6 +1555,7 @@ template {
 #signup-page .external-signup {
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 #signup-page .external-signup .btn-facebook {
@@ -1531,8 +1572,15 @@ template {
 }
 
 #signup-page .container-intro {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   align-items: center;
+  display: none;
+}
+
+@media (min-width: 750px) {
+  #signup-page .container-intro {
+    display: flex;
+  }
 }
 
 #signup-page .container-intro img {
@@ -1555,8 +1603,16 @@ body {
   background-color: #F8F8F8;
 }
 
-main {
+body {
+  /* Margin because of the fixed navigations in mobile */
   margin: 7rem 0;
+}
+
+@media (min-width: 750px) {
+  body {
+    margin-top: 7rem;
+    margin-bottom: 0;
+  }
 }
 
 a {
@@ -1570,7 +1626,8 @@ a {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 1rem 0;
+  padding: 1rem 3rem;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -1581,5 +1638,6 @@ a {
 .btn-secondary {
   background: #FFF;
   color: #1EA0C8;
+  border: 2px solid #1EA0C8;
 }
 /*# sourceMappingURL=styles.css.map */

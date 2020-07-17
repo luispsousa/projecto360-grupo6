@@ -20,9 +20,14 @@ body {
   background-color: $background;
 }
 
-//TODO - MEDIA QUERY
-main {
+body {
+  /* Margin because of the fixed navigations in mobile */
   margin: 7rem 0;
+
+  @media(min-width: $tablet){
+    margin-top: 7rem;
+    margin-bottom: 0;
+  }
 }
 
 a { 
@@ -36,7 +41,8 @@ a {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 1rem 0;
+  padding: 1rem 3rem;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -47,5 +53,6 @@ a {
 .btn-secondary {
   background: $white;
   color: $primary;
+  border: 2px solid #1EA0C8;
 }
 
