@@ -5,6 +5,7 @@
 @import 'grid';
 @import 'navbar';
 @import 'bottom-nav';
+@import 'footer';
 
 // Import pages
 @import 'signup';
@@ -21,7 +22,7 @@ body {
 
 //TODO - MEDIA QUERY
 main {
-  margin-top: 7rem;
+  margin: 7rem 0;
 }
 
 a { 
@@ -29,7 +30,22 @@ a {
   text-decoration: none;
 } 
 
-button {
+.btn {
   border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.btn-primary {
+  background: $primary;
+  color: $white;
+}
+
+.btn-secondary {
+  background: $white;
+  color: $primary;
 }
 

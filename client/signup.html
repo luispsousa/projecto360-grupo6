@@ -9,6 +9,9 @@
   </head>
 
   <body>
+    <!-- ******************** -->
+    <!-- Navbar -->
+    <!-- ******************** -->
     <header>
       <nav class="navbar">
         <img src="/images/logos/logo-negativo.png" alt="Shop in Porto Logo">
@@ -18,7 +21,10 @@
         </div>
       </nav>
     </header>
-    <main>
+    <!-- ******************** -->
+    <!-- Main -->
+    <!-- ******************** -->
+    <main id="signup-page">
       <div class="container-signup gridrow">
         <a href="#">Entrar</a>
         <a href="#">Criar Conta</a>
@@ -38,32 +44,59 @@
             <input type="checkbox" id="termsNcondicions">
             <label for="termsNcondicions">Eu aceito os <a href="#">Termos de Uso</a> e <a href="#">Políticas Privadas</a></label>
           </div>
-          <button class="btn-signup">criar conta</button>
+          <input type="submit" class="btn btn-primary btn-signup" value="criar conta">
         </form>
       </div>
+      <div class="separator">ou</div>
+      <div class="gridrow external-signup">
+        <button class="btn btn-primary btn-facebook">Criar com facebook</button>
+        <button class="btn btn-primary btn-google">Criar com google</button>
+      </div>
+      <div class="gridrow container-intro">
+        <div class="offset-t-2 col-t-4">
+          <img src="/images/sign-up.png" alt="Thinking girl">
+        </div>
+        <div class="col-t-4">
+          <p>Se criares conta no Shop In Porto podes participar na nossa comunidade, receber as últimas novidades e receber promos
+          especiais...tudo perto de ti!</p>
+        </div>
+      </div>
     </main>
+    <!-- ******************** -->
+    <!-- Mobile Bottom Nav -->
+    <!-- ******************** -->
     <div class="bottom-navigation">
-      <div>
+      <a href="#">
         <img src="/images/icons/home-icon.png" alt="Home Icon">
         <p>Home</p>
-      </div>
-      <div>
+      </a>
+      <a href="#">
         <img src="/images/icons/shopping-cart-icon.png" alt="Shopping Cart Icon">
         <p>Lojas</p>
-      </div>
-      <div>
+      </a>
+      <a href="#">
         <img src="/images/icons/place-icon.png" alt="Place Icon">
         <p>Mapa</p>
-      </div>
-      <div>
+      </a>
+      <a href="#">
         <img src="/images/icons/people-icon.png" alt="People Icon">
         <p>Comunidade</p>
-      </div>
-      <div>
+      </a>
+      <a href="#">
         <img src="/images/icons/account-circle-icon.png" alt="Account Circle Icon">
         <p>Perfil</p>
-      </div>
+      </a>
     </div>
+    <!-- ******************** -->
+    <!-- Footer -->
+    <!-- ******************** -->
+    <footer class="footer">
+      <div class="footer-newsletter">
+        <p>Assina a nossa newsletter</p>
+        <button class="btn btn-secondary">Subscrever</button>
+      </div>
+    </footer>  
+    
     <script src="./js/main.js"></script>
   </body>
 
