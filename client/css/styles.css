@@ -1524,12 +1524,15 @@ template {
 
 #homepage .hero {
   position: relative;
+  height: 40vh;
 }
 
-#homepage .hero > img {
+#homepage .hero .hero-image {
   width: 100%;
-  height: 40vh;
-  object-fit: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #homepage .hero .hero-hover {
@@ -1559,6 +1562,39 @@ template {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#homepage .card {
+  width: 250px;
+  height: auto;
+}
+
+#homepage .card img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#homepage .card .card-header {
+  color: #FFF;
+  background: #1EA0C8;
+  font-size: 12px;
+}
+
+#homepage .card .card-header .card-title {
+  margin: 0;
+}
+
+@media (max-width: 750px) {
+  #homepage .hero-image {
+    background-image: url("../images/homepage/hero-image-mobile.png");
+  }
+}
+
+@media (min-width: 750px) {
+  #homepage .hero-image {
+    background-image: url("../images/homepage/hero-image-desktop.png");
+  }
 }
 
 #signup-page .container-signup {
