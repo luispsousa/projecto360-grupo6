@@ -1,14 +1,135 @@
 #user-reviews-page {
+  .user-header {
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+  }
   .user-badge {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .user-badge-left {
+    display: flex;
+    align-items: flex-start;
+  }
+  .badge {
+    width: 30px;
+    height: auto;
+  }
+  .user-badge-text {
+    margin-left: 1rem;
+    h3 {
+      color: $conhecedor;
+      font-size: 12px;
+      font-weight: bold;
+      margin-bottom: .5rem;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .user-followers {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .user-info {
+    margin-top: -1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > img {
+      width: 100px;
+      height: auto;
+    }
+  }
+  .user-name {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: .5rem 0;
+  }
+  .user-likes {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: .5rem;
+  }
+  .user-description {
+    font-size: 12px;
+  }
+  .nav-item {
     display: flex;
     align-items: center;
-  
-    .user-badge-text {
-      h3 {
-        color: $conhecedor;
+    justify-content: space-around;
+    flex:1 0 100%;
+    background: $light-blue-03;
+    border-radius: 5px;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    p {
+      font-size: 20px;
+      font-weight: bold;
+      &:last-child {
+        color: $primary;
+        font-size: 16px;
+        font-weight: bold;
       }
     }
   }
+  .active {
+    border-bottom: 2px solid $secondary !important;
+  }
 
-  
+  @media(min-width: $tablet) {
+    .user-header {
+      padding-top: 3rem;
+    }
+    .badge {
+      width: 40px;
+    }
+    .user-badge-text {
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .user-followers {
+      font-size: 20px;
+    }
+    .user-info {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin-top: 1rem;
+      margin-right: 1rem;
+      margin-left: 15%;
+      > img {
+        width: auto;
+      }
+    }
+    .info-text {
+      padding-left: 2rem;
+    }
+    .user-name {
+      font-size: 34px;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+    .user-likes {
+      font-size: 20px;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+    .user-description {
+      font-size: 18px;
+      text-align: left;
+    }
+    .nav-item {
+      flex: 1 0 auto;
+      border-radius: 0;
+      border: 1px solid $white;
+    }
+  }
 }

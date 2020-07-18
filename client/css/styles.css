@@ -273,6 +273,7 @@ template {
   display: none;
 }
 
+/* $text: #222222; */
 .animate {
   transition: all 0.4s ease;
 }
@@ -1421,7 +1422,7 @@ table {
 }
 
 body {
-  color: #222222;
+  color: #10324F;
   font-family: "Regular", sans-serif;
   background-color: #F8F8F8;
   /* Margin because of the fixed navigations in mobile */
@@ -1994,12 +1995,151 @@ ul {
   }
 }
 
-#user-reviews-page .user-badge {
-  display: flex;
-  align-items: center;
+#user-reviews-page .user-header {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
-#user-reviews-page .user-badge .user-badge-text h3 {
+#user-reviews-page .user-badge {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#user-reviews-page .user-badge-left {
+  display: flex;
+  align-items: flex-start;
+}
+
+#user-reviews-page .badge {
+  width: 30px;
+  height: auto;
+}
+
+#user-reviews-page .user-badge-text {
+  margin-left: 1rem;
+}
+
+#user-reviews-page .user-badge-text h3 {
   color: #AE88FF;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: .5rem;
+}
+
+#user-reviews-page .user-badge-text p {
+  font-size: 12px;
+}
+
+#user-reviews-page .user-followers {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#user-reviews-page .user-info {
+  margin-top: -1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#user-reviews-page .user-info > img {
+  width: 100px;
+  height: auto;
+}
+
+#user-reviews-page .user-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: .5rem 0;
+}
+
+#user-reviews-page .user-likes {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+#user-reviews-page .user-description {
+  font-size: 12px;
+}
+
+#user-reviews-page .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 0 100%;
+  background: rgba(148, 210, 248, 0.3);
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+#user-reviews-page .nav-item p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#user-reviews-page .nav-item p:last-child {
+  color: #1EA0C8;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#user-reviews-page .active {
+  border-bottom: 2px solid #10324F !important;
+}
+
+@media (min-width: 750px) {
+  #user-reviews-page .user-header {
+    padding-top: 3rem;
+  }
+  #user-reviews-page .badge {
+    width: 40px;
+  }
+  #user-reviews-page .user-badge-text h3 {
+    font-size: 20px;
+  }
+  #user-reviews-page .user-badge-text p {
+    font-size: 18px;
+  }
+  #user-reviews-page .user-followers {
+    font-size: 20px;
+  }
+  #user-reviews-page .user-info {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 15%;
+  }
+  #user-reviews-page .user-info > img {
+    width: auto;
+  }
+  #user-reviews-page .info-text {
+    padding-left: 2rem;
+  }
+  #user-reviews-page .user-name {
+    font-size: 34px;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  #user-reviews-page .user-likes {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  #user-reviews-page .user-description {
+    font-size: 18px;
+    text-align: left;
+  }
+  #user-reviews-page .nav-item {
+    flex: 1 0 auto;
+    border-radius: 0;
+    border: 1px solid #FFF;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
