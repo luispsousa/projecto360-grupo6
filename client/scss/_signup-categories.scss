@@ -1,10 +1,20 @@
 #signup-categories-page {
   .title {
     flex-direction: column;
+
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+
+    p {
+      margin-bottom: .5rem;
+    }
   }
 
   .container {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .btn-primary {
@@ -73,6 +83,16 @@
 
     .title {
       text-align: center;
+      > h3 {
+        font-size: 48px;
+        font-weight: normal;
+        margin: 3rem 0 2rem;
+      }
+
+      p {
+        font-size: 20px;
+        margin-bottom: 1rem;
+      }
     }
   }
 }

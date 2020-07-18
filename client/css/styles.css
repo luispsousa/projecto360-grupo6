@@ -1366,6 +1366,131 @@ template {
   padding: 0;
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #222222;
+  font-family: "Regular", sans-serif;
+  background-color: #F8F8F8;
+  /* Margin because of the fixed navigations in mobile */
+  margin: 6.25rem 0;
+}
+
+@media (min-width: 750px) {
+  body {
+    margin-top: 6.25rem;
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #1EA0C8;
+  color: #FFF;
+}
+
+.btn-secondary {
+  background: #FFF;
+  color: #1EA0C8;
+  border: 2px solid #1EA0C8;
+}
+
 #navbar {
   background-color: #1EA0C8;
   color: #FFF;
@@ -1530,7 +1655,7 @@ template {
 #homepage .hero .hero-image {
   width: 100%;
   height: 100%;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1541,20 +1666,20 @@ template {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 #homepage .hero .hero-hover h1 {
   color: white;
   font-size: 34px;
-  line-height: 40px;
+  font-weight: bold;
   text-align: center;
-  margin-top: 0;
+  margin: 3rem 0 2rem;
 }
 
 #homepage .glide {
-  margin-top: 1rem;
+  margin: 2rem 0;
 }
 
 #homepage .glide .glide__slide {
@@ -1562,6 +1687,12 @@ template {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#homepage h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 3rem 0 2rem;
 }
 
 #homepage .container-promos {
@@ -1620,6 +1751,12 @@ template {
 }
 
 @media (min-width: 750px) {
+  #homepage .hero {
+    height: 50vh;
+  }
+  #homepage .hero h1 {
+    font-size: 48px;
+  }
   #homepage .hero-image {
     background-image: url("../images/homepage/hero-image-desktop.png");
   }
@@ -1629,11 +1766,11 @@ template {
   justify-content: space-between;
   align-items: center;
   color: #10324F;
-  padding: 1rem 0;
 }
 
 #signup-page .container-signup a {
   font-size: 20px;
+  margin: 1rem 0;
 }
 
 #signup-page .container-signup a:last-of-type {
@@ -1642,10 +1779,8 @@ template {
   padding-bottom: .2rem;
 }
 
-#signup-page .container-signup h1 {
-  font-size: 48px;
-  font-weight: normal;
-  text-transform: uppercase;
+#signup-page .container-signup h2 {
+  margin: 2rem;
   display: none;
 }
 
@@ -1656,7 +1791,7 @@ template {
   #signup-page .container-signup a {
     display: none;
   }
-  #signup-page .container-signup h1 {
+  #signup-page .container-signup h2 {
     display: block;
   }
 }
@@ -1766,8 +1901,18 @@ template {
   flex-direction: column;
 }
 
+#signup-categories-page .title h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+#signup-categories-page .title p {
+  margin-bottom: .5rem;
+}
+
 #signup-categories-page .container {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 #signup-categories-page .btn-primary {
@@ -1838,56 +1983,23 @@ template {
   #signup-categories-page .title {
     text-align: center;
   }
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  color: #222222;
-  font-family: "Regular", sans-serif;
-  background-color: #F8F8F8;
-  /* Margin because of the fixed navigations in mobile */
-  margin: 6.25rem 0;
-}
-
-@media (min-width: 750px) {
-  body {
-    margin-top: 6.25rem;
-    margin-bottom: 0;
+  #signup-categories-page .title > h3 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 3rem 0 2rem;
+  }
+  #signup-categories-page .title p {
+    font-size: 20px;
+    margin-bottom: 1rem;
   }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+#user-reviews-page .user-badge {
+  display: flex;
+  align-items: center;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.btn {
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding: 1rem 3rem;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background: #1EA0C8;
-  color: #FFF;
-}
-
-.btn-secondary {
-  background: #FFF;
-  color: #1EA0C8;
-  border: 2px solid #1EA0C8;
+#user-reviews-page .user-badge .user-badge-text h3 {
+  color: #AE88FF;
 }
 /*# sourceMappingURL=styles.css.map */

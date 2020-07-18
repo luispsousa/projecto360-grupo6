@@ -1,0 +1,14 @@
+#user-reviews-page {
+  .user-badge {
+    display: flex;
+    align-items: center;
+  
+    .user-badge-text {
+      h3 {
+        color: $conhecedor;
+      }
+    }
+  }
+
+  
+}
