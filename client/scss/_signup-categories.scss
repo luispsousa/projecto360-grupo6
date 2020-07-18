@@ -1,0 +1,78 @@
+#signup-categories-page {
+  .title {
+    flex-direction: column;
+  }
+
+  .container {
+    margin-bottom: 1rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+
+  .f1 {
+    flex: 1;
+  }
+
+  .f2 {
+    flex: 2;
+  }
+
+  .f3 {
+    flex: 3;
+  }
+
+  .container-cat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > p {
+      margin: .5rem .5rem;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .pink, .lilac, .light-blue, .peach, .light-pink {
+    border-radius: 4px;
+    padding: 1rem .5rem;
+    text-align: center;
+  }
+
+  .pink {
+    background: rgba(255, 172, 217, 0.5);
+  }
+
+  .lilac {
+    background: rgba(174, 136, 255, 0.5);
+  }
+
+  .light-blue {
+    background: rgba(92, 217, 187, 0.5);
+  }
+
+  .peach {
+    background: rgba(254, 238, 154, 0.5);
+  }
+
+  .light-pink {
+    background: rgba(255, 188, 150, 0.5);
+  }
+
+  @media(min-width: $tablet) {
+    .container {
+      padding: 1rem;
+      background: $white;
+    }
+
+    .title {
+      text-align: center;
+    }
+  }
+}

@@ -1381,7 +1381,7 @@ template {
   z-index: 99;
 }
 
-#navbar > img {
+#navbar .navbar-logo {
   width: 150px;
   height: auto;
 }
@@ -1760,6 +1760,84 @@ template {
 #signup-page .container-intro p {
   font-size: 24px;
   line-height: 36px;
+}
+
+#signup-categories-page .title {
+  flex-direction: column;
+}
+
+#signup-categories-page .container {
+  margin-bottom: 1rem;
+}
+
+#signup-categories-page .btn-primary {
+  width: 100%;
+}
+
+#signup-categories-page .f1 {
+  flex: 1;
+}
+
+#signup-categories-page .f2 {
+  flex: 2;
+}
+
+#signup-categories-page .f3 {
+  flex: 3;
+}
+
+#signup-categories-page .container-cat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#signup-categories-page .container-cat > p {
+  margin: .5rem .5rem;
+}
+
+#signup-categories-page .container-cat > p:first-child {
+  margin-left: 0;
+}
+
+#signup-categories-page .container-cat > p:last-child {
+  margin-right: 0;
+}
+
+#signup-categories-page .pink, #signup-categories-page .lilac, #signup-categories-page .light-blue, #signup-categories-page .peach, #signup-categories-page .light-pink {
+  border-radius: 4px;
+  padding: 1rem .5rem;
+  text-align: center;
+}
+
+#signup-categories-page .pink {
+  background: rgba(255, 172, 217, 0.5);
+}
+
+#signup-categories-page .lilac {
+  background: rgba(174, 136, 255, 0.5);
+}
+
+#signup-categories-page .light-blue {
+  background: rgba(92, 217, 187, 0.5);
+}
+
+#signup-categories-page .peach {
+  background: rgba(254, 238, 154, 0.5);
+}
+
+#signup-categories-page .light-pink {
+  background: rgba(255, 188, 150, 0.5);
+}
+
+@media (min-width: 750px) {
+  #signup-categories-page .container {
+    padding: 1rem;
+    background: #FFF;
+  }
+  #signup-categories-page .title {
+    text-align: center;
+  }
 }
 
 * {
