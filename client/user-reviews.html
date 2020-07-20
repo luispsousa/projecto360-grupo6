@@ -21,7 +21,7 @@
         <li><a href="#">Comunidade</a></li>
       </ul>
 
-      <img src="/images/logos/logo-negativo.png" alt="Shop in Porto Logo" class="navbar-logo">
+      <a href="/"><img src="/images/logos/logo-negativo.png" alt="Shop in Porto Logo" class="navbar-logo"></a>
 
       <div class="navbar-links-right">
         <img src="/images/icons/search-icon.png" alt="Search icon">
@@ -32,9 +32,9 @@
           </select>
         </div>
         <div class="signup-text">
-          <a href="#">Criar conta</a>
+          <a href="/signup.html">Criar conta</a>
           <span> / </span>
-          <a href="#">Iniciar sessão</a>
+          <a href="/user.html">Iniciar sessão</a>
           <img src="/images/icons/person-icon.png" alt="Person Icon">
         </div>
         <img src="/images/icons/menu-icon.png" alt="Menu icon" class="menu-icon">
@@ -45,53 +45,56 @@
   <!-- Main -->
   <!-- ******************** -->
   <main id="user-reviews-page">
-    <div class="user-header gridrow">
-      <div class="user-badge">
-        <div class="user-badge-left">
-          <img src="/images/user/user-badge.png" alt="User badge" class="badge">
-          <div class="user-badge-text">
-            <h3>Conhecedor</h3>
-            <p>850 pontos</p>
+    <div class="user-area">
+      <div class="user-header gridrow">
+        <div class="user-badge">
+          <div class="user-badge-left">
+            <img src="/images/user/user-badge.png" alt="User badge" class="badge">
+            <div class="user-badge-text">
+              <h3>Conhecedor</h3>
+              <p>850 pontos</p>
+            </div>
+          </div>
+          <p class="user-followers">14 seguidores</p>
+        </div>
+        <div class="user-info gridrow">
+          <img src="/images/user/avatar-desktop.png" alt="User Avatar">
+          <div class="info-text">
+            <div class="user-name">André Marques</div>
+            <div class="user-likes">Restauração &middot; Arte &middot; Fotografia</div>
+            <div class="user-description">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
+              experiências novas e de conhecer
+              novas pessoas-</div>
           </div>
         </div>
-        <p class="user-followers">14 seguidores</p>
       </div>
-      <div class="user-info gridrow">
-        <img src="/images/user/avatar-desktop.png" alt="User Avatar">
-        <div class="info-text">
-          <div class="user-name">André Marques</div>
-          <div class="user-likes">Restauração &middot; Arte &middot; Fotografia</div>
-          <div class="user-description">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de experiências novas e de conhecer
-          novas pessoas-</div>
-        </div>
+      <div class="user-navigation gridrow">
+        <a href="/user-stores.html" class="nav-item">
+          <img src="/images/icons/shopping-cart-dark-icon.png" alt="Shopping Cart Icon">
+          <p>Lojas favoritas</p>
+          <p>13</p>
+        </a>
+        <a href="/user-reviews.html" class="nav-item active-link">
+          <img src="/images/icons/star-dark-icon.png" alt="Star Icon">
+          <p>Reviews</p>
+          <p>12</p>
+        </a>
+        <a href="/user-roteiros.html" class="nav-item">
+          <img src="/images/icons/map-dark-icon.png" alt="Map Icon">
+          <p>Roteiros</p>
+          <p>4</p>
+        </a>
+        <a href="/user-checkin.html" class="nav-item">
+          <img src="/images/icons/place-dark-icon.png" alt="Location Icon">
+          <p>Check Ins</p>
+          <p>9</p>
+        </a>
+        <a href="/user-seguidores.html" class="nav-item">
+          <img src="/images/icons/person-dark-icon.png" alt="Person Icon">
+          <p>A seguir</p>
+          <p>4</p>
+        </a>
       </div>
-    </div>
-    <div class="user-navigation gridrow">
-      <a href="/user-stores.html" class="nav-item">
-        <img src="/images/icons/shopping-cart-dark-icon.png" alt="Shopping Cart Icon">
-        <p>Lojas favoritas</p>
-        <p>13</p>
-      </a>
-      <a href="/user-reviews.html" class="nav-item active-link">
-        <img src="/images/icons/star-dark-icon.png" alt="Star Icon">
-        <p>Reviews</p>
-        <p>12</p>
-      </a>
-      <a href="/user-roteiros.html" class="nav-item">
-        <img src="/images/icons/map-dark-icon.png" alt="Map Icon">
-        <p>Roteiros</p>
-        <p>4</p>
-      </a>
-      <a href="/user-checkin.html" class="nav-item">
-        <img src="/images/icons/place-dark-icon.png" alt="Location Icon">
-        <p>Check Ins</p>
-        <p>9</p>
-      </a>
-      <a href="/user-seguidores.html" class="nav-item">
-        <img src="/images/icons/person-dark-icon.png" alt="Person Icon">
-        <p>A seguir</p>
-        <p>4</p>
-      </a>
     </div>
     <div class="reviews-header gridrow">
       <h4>Reviews</h4>
@@ -792,7 +795,7 @@
   <!-- Mobile Bottom Nav -->
   <!-- ******************** -->
   <div class="bottom-navigation">
-    <a href="#">
+    <a href="/">
       <img src="/images/icons/home-icon.png" alt="Home Icon">
       <p>Home</p>
     </a>
@@ -808,7 +811,7 @@
       <img src="/images/icons/people-icon.png" alt="People Icon">
       <p>Comunidade</p>
     </a>
-    <a href="#">
+    <a href="/user.html">
       <img src="/images/icons/account-circle-icon.png" alt="Account Circle Icon">
       <p>Perfil</p>
     </a>

@@ -1,0 +1,19 @@
+#user {
+  .user-area {
+    display: block;
+  }
+  .user-body {
+    display: none;
+  }
+  @media(min-width: $tablet) {
+    .user-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

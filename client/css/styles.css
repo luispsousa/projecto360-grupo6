@@ -1748,9 +1748,10 @@ ul {
   margin-top: 1.5rem;
 }
 
-/* .user-area {
+.user-area {
   display: none;
-} */
+}
+
 .user-header {
   padding-top: 1rem;
   margin-bottom: 1rem;
@@ -2711,6 +2712,26 @@ ul {
   #user-seguidores .btn-seconday {
     padding: 1rem;
     font-size: 14px;
+  }
+}
+
+#user .user-area {
+  display: block;
+}
+
+#user .user-body {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  #user .user-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #user .user-body img {
+    width: 100%;
+    height: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
