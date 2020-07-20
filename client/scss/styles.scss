@@ -1,18 +1,20 @@
-@import 'fonts';
-@import 'normalize';
-@import 'variables';
-@import 'utils';
-@import 'grid';
-@import 'reset';
-@import 'global';
+@import 'utils/fonts';
+@import 'utils/normalize';
+@import 'utils/variables';
+@import 'utils/utils';
+@import 'utils/grid';
+@import 'utils/reset';
+@import 'utils/global';
 
 // "Components"
-@import 'navbar';
-@import 'bottom-nav';
-@import 'footer';
+@import 'components/navbar';
+@import 'components/bottom-nav';
+@import 'components/footer';
+@import 'components/user-header';
 
 // Pages
-@import 'homepage';
-@import 'signup';
-@import 'signup-categories';
-@import 'user-reviews';
+@import 'pages/homepage';
+@import 'pages/signup';
+@import 'pages/signup-categories';
+@import 'pages/user-reviews';
+@import 'pages/user-stores';

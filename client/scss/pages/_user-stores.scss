@@ -1,0 +1,124 @@
+#user-stores {
+  .card-store {
+    display: flex;
+    box-shadow: $cards-shadow;
+    border-radius: 4px;
+    background: $white;
+    margin-top: 1rem;
+  }
+  .card-store-image {
+    img {
+      max-height: 100px;
+      object-fit: cover;
+    }
+  }
+  .card-store-body {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  .store-body-title {
+    h6 {
+      font-size: 12px;
+      font-weight: bold;
+    }
+    p {
+      display: none;
+    }
+  }
+  .store-body-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: .8rem;
+    p {
+      font-size: 12px;
+      &:last-of-type {
+        display: flex;
+        justify-items: center;
+        margin-top: .8rem;
+        img {
+          margin-right: .5rem;
+        }
+      }
+      > span {
+        display: none;
+      }
+    }
+    img {
+      width: 10px;
+      height: auto;
+    }
+  }
+  .store-body-nav {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    > a {
+      display: none;
+    }
+  }
+  /* ------- */
+  /* Medias */
+  /* ------- */
+  @media(max-width: $tablet) {
+    .paddingrightfourth {
+      padding-right: 0!important;
+    }
+    .paddingleftfourth {
+      padding-left: 0!important;
+    }
+  }
+  
+  @media(min-width: $tablet) {
+    .card-store-image {
+      img {
+        max-height: none;
+      }
+    }
+    .store-body-title {
+      h6 {
+        font-size: 18px;
+        line-height: 27px;
+      }
+      p {
+        display: block;
+        font-size: 16px;
+      }
+    }
+    .store-body-info {
+      p {
+        order: 2;
+        &:last-of-type {
+          order: 1;
+          margin-top: 0;
+          margin-bottom: .8rem;
+        }
+        > span {
+          display: inline-block;
+          font-weight: bold;
+        }
+      }
+    }
+    .store-body-nav {
+      position: initial ;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: .8rem;
+      > a {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 18px;
+        border-bottom: 1px solid $primary;
+        color: $primary;
+      }
+      > img {
+        margin-right: .5rem;
+      }
+    } 
+  }
+}
