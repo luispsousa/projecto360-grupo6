@@ -2656,4 +2656,61 @@ ul {
     margin-right: .5rem;
   }
 }
+
+#user-seguidores {
+  /* ------ */
+  /* Medias */
+  /* ------ */
+}
+
+#user-seguidores .card-user {
+  margin-top: 1rem;
+  box-shadow: 0px 2px 2px rgba(166, 167, 168, 0.48);
+  background: #FFF;
+  border-radius: 4px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#user-seguidores .card-user-info h3 {
+  margin-bottom: .5rem;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#user-seguidores .card-user-score {
+  display: flex;
+  align-items: center;
+}
+
+#user-seguidores .card-user-score p {
+  margin-left: .5rem;
+  font-size: 12px;
+}
+
+#user-seguidores .user-score-text {
+  color: #689FF1;
+  font-weight: bold;
+}
+
+#user-seguidores .user-score-value {
+  display: none;
+}
+
+#user-seguidores .btn-secondary {
+  padding: .5rem;
+  font-size: 12px;
+}
+
+@media (min-width: 750px) {
+  #user-seguidores .user-score-value {
+    display: inline;
+  }
+  #user-seguidores .btn-seconday {
+    padding: 1rem;
+    font-size: 14px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
