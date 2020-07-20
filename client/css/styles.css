@@ -1539,6 +1539,16 @@ ul {
   transform: rotate(45deg);
 }
 
+/* Remove padding in mobile */
+@media (max-width: 750px) {
+  .paddingrightfourth {
+    padding-right: 0 !important;
+  }
+  .paddingleftfourth {
+    padding-left: 0 !important;
+  }
+}
+
 #navbar {
   background-color: #1EA0C8;
   color: #FFF;
@@ -2326,15 +2336,6 @@ ul {
   margin-left: 1rem;
 }
 
-@media (max-width: 750px) {
-  #user-reviews-page .paddingrightfourth {
-    padding-right: 0 !important;
-  }
-  #user-reviews-page .paddingleftfourth {
-    padding-left: 0 !important;
-  }
-}
-
 #user-stores {
   /* ------- */
   /* Medias */
@@ -2411,15 +2412,6 @@ ul {
   display: none;
 }
 
-@media (max-width: 750px) {
-  #user-stores .paddingrightfourth {
-    padding-right: 0 !important;
-  }
-  #user-stores .paddingleftfourth {
-    padding-left: 0 !important;
-  }
-}
-
 @media (min-width: 750px) {
   #user-stores .card-store-image img {
     max-height: none;
@@ -2462,5 +2454,68 @@ ul {
   #user-stores .store-body-nav > img {
     margin-right: .5rem;
   }
+}
+
+#user-roteiros .card-roteiro {
+  box-shadow: 0px 2px 2px rgba(166, 167, 168, 0.48);
+  margin-top: 1rem;
+}
+
+#user-roteiros .card-roteiro-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1EA0C8;
+  border-radius: 4px 4px 0 0;
+  padding: .5rem;
+}
+
+#user-roteiros .card-roteiro-header-title h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFF;
+  line-height: 24px;
+}
+
+#user-roteiros .card-roteiro-header-title p {
+  font-size: 12px;
+  color: #FFF;
+}
+
+#user-roteiros .card-roteiro-image img {
+  width: 100%;
+}
+
+#user-roteiros .card-roteiro-footer {
+  border-radius: 0 0 4px 4px;
+  padding: .5rem;
+}
+
+#user-roteiros .card-roteiro-footer > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+#user-roteiros .card-roteiro-footer-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#user-roteiros .card-roteiro-footer-icons > div {
+  display: flex;
+}
+
+#user-roteiros .evaluation-stats {
+  display: flex;
+  align-items: center;
+}
+
+#user-roteiros .evaluation-stats:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+#user-roteiros .createdBy {
+  font-weight: bold;
 }
 /*# sourceMappingURL=styles.css.map */

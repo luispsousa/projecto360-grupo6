@@ -96,3 +96,13 @@ ul {
 .down {
   transform: rotate(45deg);
 }
+
+/* Remove padding in mobile */
+@media(max-width: $tablet) {
+  .paddingrightfourth {
+    padding-right: 0!important;
+  }
+  .paddingleftfourth {
+    padding-left: 0!important;
+  }
+}

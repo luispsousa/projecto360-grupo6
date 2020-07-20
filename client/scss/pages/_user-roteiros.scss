@@ -1,0 +1,57 @@
+#user-roteiros {
+  .card-roteiro {
+    box-shadow: $cards-shadow;
+    margin-top: 1rem;
+  }
+  .card-roteiro-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $primary;
+    border-radius: 4px 4px 0 0;
+    padding: .5rem;
+  }
+  .card-roteiro-header-title {
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      color: $white;
+      line-height: 24px;
+    }
+    p {
+      font-size: 12px;
+      color: $white;
+    }
+  }
+  .card-roteiro-image {
+    img {
+      width: 100%;
+    }
+  }
+  .card-roteiro-footer {
+    border-radius: 0 0 4px 4px;
+    padding: .5rem;
+    > div:first-child {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: .5rem;
+    }
+  }
+  .card-roteiro-footer-icons {
+    display: flex;
+    justify-content: space-between;
+    > div {
+      display: flex;
+    }
+  }
+  .evaluation-stats {
+    display: flex;
+    align-items: center;
+    &:not(:first-of-type) {
+      margin-left: 1rem;
+    }
+  }
+  .createdBy {
+    font-weight: bold;
+  }
+}
