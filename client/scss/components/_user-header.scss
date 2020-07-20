@@ -1,3 +1,6 @@
+/* .user-area {
+  display: none;
+} */
 .user-header {
     padding-top: 1rem;
     margin-bottom: 1rem;
@@ -100,6 +103,9 @@
     }
   }
   @media(min-width: $tablet) {
+    .user-area {
+      display: block;
+    }
     .user-header {
       padding-top: 3rem;
     }
