@@ -77,6 +77,30 @@
       }
     }
   }
+  .reviews-header {
+    display: flex;
+    flex-direction: column;
+    h4 {
+      font-size: 24px;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .dropdown {
+        background: $light-blue-03;
+        border-radius: 4px;
+        padding: .5rem;
+        i {
+          margin-left: .5rem;
+        }
+      }
+    }
+    
+  }
   /* card review */
   .card-review {
     flex: 1 0 100%;
@@ -133,9 +157,12 @@
       margin-left: 1rem;
     }
   }
-  .active {
-    border-bottom: 2px solid $secondary !important;
+  .pagination {
+    display: flex;
+    justify-content:  flex-end;
+    margin-bottom: 2rem;
   }
+  
   @media(max-width: $tablet) {
     /* .margintophalf {
       margin-top: 0!important;
@@ -197,61 +224,9 @@
       border-radius: 0;
       border: 1px solid $white;
     }
-    /* card review */
-  .card-review {
-    flex: 1 0 48%;
-    justify-content: space-between;
-    background: $white;
-    box-shadow: 0px 2px 2px rgba(166, 167, 168, 0.48);
-    border-radius: 4px;
-    padding: .5rem;
-  }
-  .review-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-  .review-header-text {
-    h3 {
-      font-size: 16px;
-      font-weight: bold;
-      margin-bottom: .5rem;
+
+    .active-link {
+      border-bottom: 2px solid $secondary !important;
     }
-    p {
-      font-size: 12px;
-    }
-  }
-  .review-header-icons {
-    display: flex;
-    align-items: center;
-  }
-  .review-score {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-  .score-item {
-    > img {
-      width: 12px;
-    }
-  }
-  .review-description {
-    line-height: 18px;
-    margin-bottom: 1rem;
-  }
-  .review-evaluation {
-    display: flex;
-    justify-content: space-between;
-    > div {
-      display: flex;
-    }
-  }
-  .evaluation-stats {
-    display: flex;
-    align-items: center;
-    &:not(:first-of-type) {
-      margin-left: 1rem;
-    }
-  }
   }
 }

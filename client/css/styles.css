@@ -1492,6 +1492,47 @@ ul {
   border: 2px solid #1EA0C8;
 }
 
+.btn-pagination {
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  background: #FFF;
+  color: #1EA0C8;
+  margin: 1rem 0 1rem .5rem;
+  cursor: pointer;
+}
+
+.active {
+  background: #1EA0C8;
+  color: #FFF;
+}
+
+/* CSS Arrows */
+.arrow {
+  border: solid #10324F;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+}
+
 #navbar {
   background-color: #1EA0C8;
   color: #FFF;
@@ -1513,6 +1554,7 @@ ul {
 }
 
 #navbar .navbar-links-left {
+  font-weight: bold;
   display: none;
   position: absolute;
   left: 5%;
@@ -2093,6 +2135,33 @@ ul {
   font-weight: bold;
 }
 
+#user-reviews-page .reviews-header {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-reviews-page .reviews-header h4 {
+  font-size: 24px;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#user-reviews-page .reviews-header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#user-reviews-page .reviews-header > div .dropdown {
+  background: rgba(148, 210, 248, 0.3);
+  border-radius: 4px;
+  padding: .5rem;
+}
+
+#user-reviews-page .reviews-header > div .dropdown i {
+  margin-left: .5rem;
+}
+
 #user-reviews-page .card-review {
   flex: 1 0 100%;
   background: #FFF;
@@ -2156,8 +2225,10 @@ ul {
   margin-left: 1rem;
 }
 
-#user-reviews-page .active {
-  border-bottom: 2px solid #10324F !important;
+#user-reviews-page .pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 750px) {
@@ -2175,9 +2246,6 @@ ul {
 }
 
 @media (min-width: 750px) {
-  #user-reviews-page {
-    /* card review */
-  }
   #user-reviews-page .user-header {
     padding-top: 3rem;
   }
@@ -2225,56 +2293,8 @@ ul {
     border-radius: 0;
     border: 1px solid #FFF;
   }
-  #user-reviews-page .card-review {
-    flex: 1 0 48%;
-    justify-content: space-between;
-    background: #FFF;
-    box-shadow: 0px 2px 2px rgba(166, 167, 168, 0.48);
-    border-radius: 4px;
-    padding: .5rem;
-  }
-  #user-reviews-page .review-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-  #user-reviews-page .review-header-text h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: .5rem;
-  }
-  #user-reviews-page .review-header-text p {
-    font-size: 12px;
-  }
-  #user-reviews-page .review-header-icons {
-    display: flex;
-    align-items: center;
-  }
-  #user-reviews-page .review-score {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-  #user-reviews-page .score-item > img {
-    width: 12px;
-  }
-  #user-reviews-page .review-description {
-    line-height: 18px;
-    margin-bottom: 1rem;
-  }
-  #user-reviews-page .review-evaluation {
-    display: flex;
-    justify-content: space-between;
-  }
-  #user-reviews-page .review-evaluation > div {
-    display: flex;
-  }
-  #user-reviews-page .evaluation-stats {
-    display: flex;
-    align-items: center;
-  }
-  #user-reviews-page .evaluation-stats:not(:first-of-type) {
-    margin-left: 1rem;
+  #user-reviews-page .active-link {
+    border-bottom: 2px solid #10324F !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
