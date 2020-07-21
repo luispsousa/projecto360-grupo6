@@ -1929,6 +1929,12 @@ ul {
   }
 }
 
+#homepage {
+  /* ----- */
+  /* Glide */
+  /* ----- */
+}
+
 #homepage .hero {
   position: relative;
   height: 40vh;
@@ -1960,8 +1966,15 @@ ul {
   margin: 3rem 0 2rem;
 }
 
+#homepage .container-glider {
+  position: relative;
+}
+
 #homepage .glide {
-  margin: 2rem 0;
+  position: static;
+  margin: 2rem auto;
+  width: 90%;
+  z-index: 2;
 }
 
 #homepage .glide .glide__slide {
@@ -1969,6 +1982,28 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+#homepage .glide__controls {
+  position: absolute;
+  top: calc(50% - 29px / 2);
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+#homepage .glide__controls button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  color: #1EA0C8;
+}
+
+#homepage .glide__controls button:focus {
+  outline: none;
 }
 
 #homepage h2 {
