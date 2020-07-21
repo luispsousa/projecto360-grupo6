@@ -1426,12 +1426,12 @@ body {
   font-family: "Regular", sans-serif;
   background-color: #F8F8F8;
   /* Margin because of the fixed navigations in mobile */
-  margin: 6.25rem 0;
+  margin: 4.6875rem 0;
 }
 
 @media (min-width: 750px) {
   body {
-    margin-top: 6.25rem;
+    margin-top: 4.6875rem;
     margin-bottom: 0;
   }
 }
@@ -1552,7 +1552,7 @@ ul {
 #navbar {
   background-color: #1EA0C8;
   color: #FFF;
-  height: 100px;
+  height: 75px;
   text-align: center;
   position: fixed;
   top: 0;
@@ -1565,7 +1565,7 @@ ul {
 }
 
 #navbar .navbar-logo {
-  width: 150px;
+  width: 120px;
   height: auto;
 }
 

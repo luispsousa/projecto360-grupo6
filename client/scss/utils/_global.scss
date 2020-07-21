@@ -7,10 +7,10 @@ body {
   font-family: $bodyfont, sans-serif;
   background-color: $background;
   /* Margin because of the fixed navigations in mobile */
-  margin: 6.25rem 0;
+  margin: 4.6875rem 0;
 
   @media(min-width: $tablet){
-    margin-top: 6.25rem;
+    margin-top: 4.6875rem;
     margin-bottom: 0;
   }
 }
