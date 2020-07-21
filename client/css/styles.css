@@ -1753,77 +1753,89 @@ ul {
 }
 
 .user-header {
-  padding-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.user-badge {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.user-badge-left {
-  display: flex;
-  align-items: flex-start;
-}
-
-.badge {
-  width: 30px;
-  height: auto;
-}
-
-.user-badge-text {
-  margin-left: 1rem;
-}
-
-.user-badge-text h3 {
-  color: #AE88FF;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: .5rem;
-}
-
-.user-badge-text p {
-  font-size: 12px;
-}
-
-.user-followers {
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.user-info {
-  margin-top: -1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
-.user-info > img {
+.user-avatar {
+  order: 2;
+  margin-top: -1rem;
+}
+
+.user-avatar img {
   width: 100px;
   height: auto;
+}
+
+.user-info {
+  order: 3;
+  text-align: center;
 }
 
 .user-name {
   font-size: 20px;
   font-weight: bold;
-  text-align: center;
-  margin: .5rem 0;
+  line-height: 30px;
 }
 
 .user-likes {
   font-size: 16px;
-  text-align: center;
-  margin-bottom: .5rem;
+  line-height: 23px;
 }
 
 .user-description {
+  font-size: 16px;
+  text-align: left;
+  margin: .5rem 0;
+}
+
+.user-edit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: .5rem 0;
+  color: #1EA0C8;
   font-size: 12px;
 }
 
+.user-score {
+  order: 1;
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-score > div {
+  display: flex;
+}
+
+.user-score > p {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.user-badge-text {
+  margin-left: .5rem;
+}
+
+.user-badge-text h3 {
+  color: #85C3D5;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.user-badge-text p {
+  color: #A6A7A8;
+  font-size: 12px;
+}
+
+/* ------------- */
+/* User Area Nav */
+/* ------------- */
 .nav-item {
   display: flex;
   align-items: center;
@@ -1878,46 +1890,68 @@ ul {
     display: block;
   }
   .user-header {
-    padding-top: 3rem;
-  }
-  .badge {
-    width: 40px;
-  }
-  .user-badge-text h3 {
-    font-size: 20px;
-  }
-  .user-badge-text p {
-    font-size: 18px;
-  }
-  .user-followers {
-    font-size: 20px;
-  }
-  .user-info {
     flex-direction: row;
     flex-wrap: nowrap;
-    margin-top: 1rem;
-    margin-right: 1rem;
-    margin-left: 15%;
+    padding: 3rem 0;
+    position: relative;
   }
-  .user-info > img {
-    width: auto;
+  .user-avatar {
+    order: 1;
+    margin-top: 0rem;
   }
-  .info-text {
-    padding-left: 2rem;
+  .user-avatar img {
+    width: 165px;
+    height: auto;
+  }
+  .user-info {
+    order: 2;
+    text-align: left;
+    padding: 0 10rem 0 3rem;
   }
   .user-name {
     font-size: 34px;
-    text-align: left;
-    margin-bottom: 1rem;
+    font-weight: normal;
+    line-height: 51px;
   }
   .user-likes {
     font-size: 20px;
-    text-align: left;
-    margin-bottom: 1rem;
+    line-height: 30px;
   }
   .user-description {
     font-size: 18px;
     text-align: left;
+  }
+  .user-edit {
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  .user-score {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+    position: absolute;
+    top: 3rem;
+    bottom: 3rem;
+    right: 0;
+  }
+  .user-score > div {
+    display: flex;
+  }
+  .user-score > p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .user-badge-text h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .user-badge-text p {
+    color: #A6A7A8;
+    font-size: 18px;
   }
   .nav-item {
     flex: 1 0 auto;
@@ -2727,7 +2761,7 @@ ul {
 }
 
 #user-seguidores .user-score-text {
-  color: #689FF1;
+  color: #10324F;
   font-weight: bold;
 }
 

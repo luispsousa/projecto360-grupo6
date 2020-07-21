@@ -2,161 +2,194 @@
   display: none;
 }
 .user-header {
-    padding-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  .user-badge {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .user-badge-left {
-    display: flex;
-    align-items: flex-start;
-  }
-  .badge {
-    width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-avatar {
+  order: 2;
+  img {
+    width: 100px;
     height: auto;
   }
-  .user-badge-text {
-    margin-left: 1rem;
-    h3 {
-      color: $conhecedor;
-      font-size: 12px;
-      font-weight: bold;
-      margin-bottom: .5rem;
-    }
-    p {
-      font-size: 12px;
-    }
+  margin-top: -1rem;
+}
+.user-info {
+  order: 3;
+  text-align: center;
+}
+.user-name {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.user-likes {
+  font-size: 16px;
+  line-height: 23px;
+}
+.user-description {
+  font-size: 16px;
+  text-align: left;
+  margin: .5rem 0;
+}
+.user-edit {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: .5rem 0;
+  color: $primary;
+  font-size: 12px;
+}
+.user-score {
+  order: 1;
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  > div {
+    display: flex;
   }
-  .user-followers {
-    font-size: 12px;
+  > p {
+    font-size: 16px;
     font-weight: bold;
   }
-  .user-info {
-    margin-top: -1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    > img {
-      width: 100px;
-      height: auto;
-    }
+}
+.user-badge-text {
+  margin-left: .5rem;
+  h3 {
+    color: $conhecedor;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 21px;
   }
-  .user-name {
+  p {
+    color: $disabled;
+    font-size: 12px;
+  }
+}
+/* ------------- */
+/* User Area Nav */
+/* ------------- */
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex:1 0 100%;
+  background: $light-blue-03;
+  border-radius: 5px;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  p {
     font-size: 20px;
     font-weight: bold;
+    &:last-child {
+      color: $primary;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+.reviews-header {
+  display: flex;
+  flex-direction: column;
+  h4 {
+    font-size: 24px;
     text-align: center;
-    margin: .5rem 0;
+    margin: 2rem 0;
+  }
+  > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .dropdown {
+      background: $light-blue-03;
+      border-radius: 4px;
+      padding: .5rem;
+      i {
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+@media(min-width: $tablet) {
+  .user-area {
+    display: block;
+  }
+  .user-header {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 3rem 0;
+    position: relative;
+  }
+  .user-avatar {
+    order: 1;
+    img {
+      width: 165px;
+      height: auto;
+    }
+    margin-top: 0rem;
+  }
+  .user-info {
+    order: 2;
+    text-align: left;
+    padding: 0 10rem 0 3rem;
+  }
+  .user-name {
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 51px;
   }
   .user-likes {
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: .5rem;
+    font-size: 20px;
+    line-height: 30px;
   }
   .user-description {
-    font-size: 12px;
+    font-size: 18px;
+    text-align: left;
   }
-  .nav-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex:1 0 100%;
-    background: $light-blue-03;
-    border-radius: 5px;
-    padding: 1rem 0;
-    margin-bottom: 1rem;
-    p {
-      font-size: 20px;
-      font-weight: bold;
-      &:last-child {
-        color: $primary;
-        font-size: 16px;
-        font-weight: bold;
-      }
-    }
+  .user-edit {
+    justify-content: flex-start;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 1rem;
   }
-  .reviews-header {
+  .user-score {
+    order: 3;
     display: flex;
     flex-direction: column;
-    h4 {
-      font-size: 24px;
-      text-align: center;
-      margin: 2rem 0;
-    }
+    margin: 0;
+    width: auto;
+    position: absolute;
+    top: 3rem;
+    bottom: 3rem;
+    right: 0;
     > div {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .dropdown {
-        background: $light-blue-03;
-        border-radius: 4px;
-        padding: .5rem;
-        i {
-          margin-left: .5rem;
-        }
-      }
+    }
+    > p {
+      font-size: 20px;
+      font-weight: bold;
     }
   }
-  @media(min-width: $tablet) {
-    .user-area {
-      display: block;
-    }
-    .user-header {
-      padding-top: 3rem;
-    }
-    .badge {
-      width: 40px;
-    }
-    .user-badge-text {
-      h3 {
-        font-size: 20px;
-      }
-      p {
-        font-size: 18px;
-      }
-    }
-    .user-followers {
+  .user-badge-text {
+    h3 {
       font-size: 20px;
+      line-height: 30px;
     }
-    .user-info {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      margin-top: 1rem;
-      margin-right: 1rem;
-      margin-left: 15%;
-      > img {
-        width: auto;
-      }
-    }
-    .info-text {
-      padding-left: 2rem;
-    }
-    .user-name {
-      font-size: 34px;
-      text-align: left;
-      margin-bottom: 1rem;
-    }
-    .user-likes {
-      font-size: 20px;
-      text-align: left;
-      margin-bottom: 1rem;
-    }
-    .user-description {
+    p {
+      color: $disabled;
       font-size: 18px;
-      text-align: left;
-    }
-    .nav-item {
-      flex: 1 0 auto;
-      border-radius: 0;
-      border: 1px solid $white;
-    }
-    .active-link {
-      border-bottom: 2px solid $secondary !important;
     }
   }
+  .nav-item {
+    flex: 1 0 auto;
+    border-radius: 0;
+    border: 1px solid $white;
+  }
+  .active-link {
+    border-bottom: 2px solid $secondary !important;
+  }
+}
   
