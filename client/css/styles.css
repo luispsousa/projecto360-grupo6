@@ -1569,6 +1569,19 @@ ul {
   height: auto;
 }
 
+#navbar .flex-container {
+  display: flex;
+  align-items: center;
+}
+
+#navbar .arrow {
+  border: solid #FFF;
+  border-width: 0 2px 2px 0;
+  padding: 6px;
+  position: absolute;
+  left: 10%;
+}
+
 #navbar .navbar-links-left {
   font-weight: bold;
   display: none;
@@ -1617,6 +1630,9 @@ ul {
   #navbar .signup-text {
     display: flex;
     align-items: center;
+  }
+  #navbar .arrow {
+    display: none;
   }
   #navbar .navbar-links-left {
     display: flex;

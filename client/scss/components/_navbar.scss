@@ -11,68 +11,68 @@
   justify-content: center;
   align-items: center;
   z-index: 99;
-
   .navbar-logo {
     width: 120px;
     height: auto;
   }
-
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+  .arrow {
+    border: solid $white;
+    border-width: 0 2px 2px 0;
+    padding: 6px;
+    position: absolute;
+    left: 10%;
+  }
   .navbar-links-left {
     font-weight: bold;
     display: none;
     position: absolute;
     left: 5%;
-
     > li:not(:first-child) {
       margin-left: 3rem;
     }
   }
-
   .navbar-links-right {
     display: flex;
     align-items: center;
     position: absolute;
     right: 5%;
   }
-
   #language {
     display: none;
   }
-
   .signup-text {
     display: none;
-
     span {
       margin: .2rem;
     }
-
     img {
       margin-left: .5rem;
     }
   }
-
   .menu-icon {
     margin-left: 1rem;
   }
-
   @media(min-width: $tablet) {
     .navbar-links-right > *:not(:first-child) {
       margin-left: 2rem;
     }
-
     #language {
       display: inline-block;
     }
-
     .signup-text {
         display: flex;
         align-items: center;
       }
-
+    .arrow {
+      display: none;
+    }
     .navbar-links-left {
       display: flex;
     }
-    
     .menu-icon {
       display: none;
     }
