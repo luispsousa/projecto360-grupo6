@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop in Porto</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="./css/glide.core.min.css">
+  <link rel="stylesheet" href="./css/glide.theme.min.css">
 </head>
 
 <body>
@@ -102,10 +102,7 @@
             </li>
           </ul>
         </div>
-        <button aria-label="Previous" class="glider-prev">«</button>
-        <button aria-label="Next" class="glider-next">»</button>
-        <div role="tablist" class="dots"></div>
-        <!-- <div class="glide__bullets" data-glide-el="controls[nav]">
+        <div class="glide__bullets" data-glide-el="controls[nav]">
           <button class="glide__bullet" data-glide-dir="=0"></button>
           <button class="glide__bullet" data-glide-dir="=1"></button>
           <button class="glide__bullet" data-glide-dir="=2"></button>
@@ -113,7 +110,7 @@
         <div class="glide__arrows" data-glide-el="controls">
           <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
           <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
-        </div> -->
+        </div>
       </div>
     </div>
     <div class="gridrow">
@@ -295,7 +292,8 @@
       <p class="copyright">Copyright 2020: Câmara Municipal do Porto</p>
     </div>
   </footer>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  
   <script>
     const config = {
       type: "carousel",
@@ -309,8 +307,8 @@
         750: {
           perView: 3
         }
-      },
-    };
+      }
+    }
     new Glide('.glide', config).mount();
   </script>
   <script src="./js/main.js"></script>
