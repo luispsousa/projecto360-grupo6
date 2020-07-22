@@ -5,41 +5,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop in Porto</title>
+  <link rel="stylesheet" href="./css/glider.min.css">
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="./css/glide.core.min.css">
-  <link rel="stylesheet" href="./css/glide.theme.min.css">
 </head>
 
 <body>
   <!-- ******************** -->
   <!-- Navbar -->
   <!-- ******************** -->
-    <header>
-      <nav id="navbar">
-        <ul class="navbar-links-left">
-          <li><a href="#">Lojas</a></li>
-          <li><a href="#">Mapa</a></li>
-          <li><a href="#">Comunidade</a></li>
-        </ul>
-        <a href="/"><img src="/images/logos/logo-negativo.png" alt="Shop in Porto Logo" class="navbar-logo"></a>
-        <div class="navbar-links-right">
-          <a href="/signup-categories.html"><img src="/images/icons/search.svg" alt="Search icon"></a>
-          <div>
-            <select name="language" id="language">
-              <option value="pt" selected>PT</option>
-              <option value="en">EN</option>
-            </select>
-          </div>
-          <div class="signup-text">
-            <a href="/signup.html">Criar conta</a>
-            <span> / </span>
-            <a href="/user.html">Iniciar sessão</a>
-            <img src="/images/icons/person_outline.svg" alt="Person Icon">
-          </div>
-          <img src="/images/icons/menu.svg" alt="Menu icon" class="menu-icon">
+  <header>
+    <nav id="navbar">
+      <ul class="navbar-links-left">
+        <li><a href="#">Lojas</a></li>
+        <li><a href="#">Mapa</a></li>
+        <li><a href="#">Comunidade</a></li>
+      </ul>
+      <a href="/"><img src="/images/logos/logo-negativo.png" alt="Shop in Porto Logo" class="navbar-logo"></a>
+      <div class="navbar-links-right">
+        <a href="/signup-categories.html"><img src="/images/icons/search.svg" alt="Search icon"></a>
+        <div>
+          <select name="language" id="language">
+            <option value="pt" selected>PT</option>
+            <option value="en">EN</option>
+          </select>
         </div>
-      </nav>
-    </header>
+        <div class="signup-text">
+          <a href="/signup.html">Criar conta</a>
+          <span> / </span>
+          <a href="/user.html">Iniciar sessão</a>
+          <img src="/images/icons/person_outline.svg" alt="Person Icon">
+        </div>
+        <img src="/images/icons/menu.svg" alt="Menu icon" class="menu-icon">
+      </div>
+    </nav>
+  </header>
   <!-- ******************** -->
   <!-- Main -->
   <!-- ******************** -->
@@ -57,7 +56,8 @@
     <!-- ******************** -->
     <!-- Glide -->
     <!-- ******************** -->
-    <div class="gridrow container-glider">
+    <!-- <div class="gridrow container-glider">
+      
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
@@ -100,99 +100,134 @@
           <button data-glide-dir=">">></button>
         </div>
       </div>
-    </div>
-    <div class="gridrow">
-      <h2>Promoções perto de ti</h2>
-      <div class="container-promos gridrow">
-        <div class="card">
-          <img src="/images/store-card-image.png" alt="">
-          <div class="card-container">
-            <div class="card-header">
-              <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
-              <p class="card-categories">Fotografia, papelaria e gráfica</p>
-            </div>
-            <div class="card-body">
-              <p class="card-address">2,1km | Ribeira</p>
-              <p class="card-rating">Fabuloso</p>
-              <p class="card-promotion">Promoção: 50% em cadernos</p>
-            </div>
+    </div> -->
+    <div class="gridrow categories-glider">
+      <div class="glider-contain">
+        <div class="glider-categories">
+          <div class="category-item">
+            <img src="/images/icons/restaurant.svg" alt="">
+            <p>Restaurantes</p>
           </div>
-        </div>
-        <div class="card">
-          <img src="/images/store-card-image.png" alt="">
-          <div class="card-container">
-            <div class="card-header">
-              <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
-              <p class="card-categories">Fotografia, papelaria e gráfica</p>
-            </div>
-            <div class="card-body">
-              <p class="card-address">2,1km | Ribeira</p>
-              <p class="card-rating">Fabuloso</p>
-              <p class="card-promotion">Promoção: 50% em cadernos</p>
-            </div>
+          <div class="category-item">
+            <img src="/images/icons/music_note.svg" alt="">
+            <p>Música</p>
           </div>
-        </div>
-        <div class="card">
-          <img src="/images/store-card-image.png" alt="">
-          <div class="card-container">
-            <div class="card-header">
-              <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
-              <p class="card-categories">Fotografia, papelaria e gráfica</p>
-            </div>
-            <div class="card-body">
-              <p class="card-address">2,1km | Ribeira</p>
-              <p class="card-rating">Fabuloso</p>
-              <p class="card-promotion">Promoção: 50% em cadernos</p>
-            </div>
+          <div class="category-item">
+            <img src="/images/icons/camera_alt.svg" alt="">
+            <p>Fotografia</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/icons/book.svg" alt="">
+            <p>Livros</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/icons/live_tv.svg" alt="">
+            <p>Tecnologia</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/icons/child_friendly.svg" alt="">
+            <p>Criança</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/icons/pets.svg" alt="">
+            <p>Animais</p>
+          </div>
+          <div class="category-item">
+            <img src="/images/icons/free_breakfast.svg" alt="">
+            <p>Confeitarias</p>
           </div>
         </div>
       </div>
     </div>
     <div class="gridrow">
-      <h2>Lojas mais populares</h2>
-      <div class="container-promos gridrow">
-        <div class="card">
-          <img src="/images/store-card-image.png" alt="">
-          <div class="card-container">
-            <div class="card-header">
-              <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
-              <p class="card-categories">Fotografia, papelaria e gráfica</p>
+      <h2>Promoções perto de ti</h2>
+      <div class="glider-contain">
+        <div class="glider-store">
+          <div class="card-parent">
+            <div class="card">
+              <img src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">2,1km | Ribeira</p>
+                  <p class="card-rating">Fabuloso</p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
+              </div>
             </div>
-            <div class="card-body">
-              <p class="card-address">2,1km | Ribeira</p>
-              <p class="card-rating">Fabuloso</p>
-              <p class="card-promotion">Promoção: 50% em cadernos</p>
+          </div>
+          <div class="card-parent">
+            <div class="card">
+              <img src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">2,1km | Ribeira</p>
+                  <p class="card-rating">Fabuloso</p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-parent">
+            <div class="card">
+              <img src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">2,1km | Ribeira</p>
+                  <p class="card-rating">Fabuloso</p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-parent">
+            <div class="card">
+              <img src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">2,1km | Ribeira</p>
+                  <p class="card-rating">Fabuloso</p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-parent">
+            <div class="card">
+              <img src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">2,1km | Ribeira</p>
+                  <p class="card-rating">Fabuloso</p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="card">
-          <img src="/images/store-card-image.png" alt="">
-          <div class="card-container">
-            <div class="card-header">
-              <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
-              <p class="card-categories">Fotografia, papelaria e gráfica</p>
-            </div>
-            <div class="card-body">
-              <p class="card-address">2,1km | Ribeira</p>
-              <p class="card-rating">Fabuloso</p>
-              <p class="card-promotion">Promoção: 50% em cadernos</p>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="/images/store-card-image.png" alt="">
-          <div class="card-container">
-            <div class="card-header">
-              <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
-              <p class="card-categories">Fotografia, papelaria e gráfica</p>
-            </div>
-            <div class="card-body">
-              <p class="card-address">2,1km | Ribeira</p>
-              <p class="card-rating">Fabuloso</p>
-              <p class="card-promotion">Promoção: 50% em cadernos</p>
-            </div>
-          </div>
-        </div>
+
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <!-- <div role="tablist" class="dots"></div> -->
       </div>
     </div>
   </main>
@@ -280,23 +315,42 @@
       <p class="copyright">Copyright 2020: Câmara Municipal do Porto</p>
     </div>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="./js/glider.min.js"></script>
   <script>
-    const config = {
-      type: "carousel",
-      perView: 6,
-      dots: '#dots',
+    new Glider(document.querySelector('.glider-store'), {
+      slidesToShow: 1.5,
+      slidesToScroll: 1,
+      draggable: true,
       arrows: {
         prev: '.glider-prev',
         next: '.glider-next'
       },
-      breakpoints: {
-        750: {
-          perView: 3
+      responsive: [
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            duration: 0.25
+          }
         }
-      }
-    }
-    new Glide('.glide', config).mount();
+      ]
+    });
+    new Glider(document.querySelector('.glider-categories'), {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        draggable: true,
+        responsive: [
+        {
+          breakpoint: 750,
+          settings: {
+            slidesToShow: 8,
+            slidesToScroll: 1,
+            duration: 0.25
+          }
+        }
+      ]
+      });
   </script>
   <script src="./js/main.js"></script>
 </body>

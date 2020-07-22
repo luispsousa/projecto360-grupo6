@@ -1510,7 +1510,7 @@ ul {
   margin-bottom: 2rem;
 }
 
-.active {
+.active-btn {
   background: #1EA0C8;
   color: #FFF;
 }
@@ -2016,58 +2016,23 @@ ul {
   margin: 3rem 0 2rem;
 }
 
-#homepage .container-glider {
-  position: relative;
+#homepage .categories-glider {
+  margin: 1rem auto;
 }
 
-#homepage .glide {
-  position: static;
-  margin: 2rem auto;
-  width: 90%;
-  z-index: 2;
-}
-
-#homepage .glide .glide__slide {
+#homepage .category-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-#homepage .glide__controls {
-  position: absolute;
-  top: calc(50% - 29px / 2);
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  z-index: -1;
-}
-
-#homepage .glide__controls button {
-  cursor: pointer;
-  font-size: 1.5rem;
-  border: none;
-  background: none;
-  color: #1EA0C8;
-}
-
-#homepage .glide__controls button:focus {
-  outline: none;
-}
-
-#homepage h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 3rem 0 2rem;
-}
-
-#homepage .container-promos {
-  justify-content: space-between;
+#homepage .card-parent {
+  margin: 1.5rem;
 }
 
 #homepage .card {
-  width: 250px;
+  width: 100%;
   border-radius: 4px;
   box-shadow: 0px 2px 2px rgba(166, 167, 168, 0.48);
 }
