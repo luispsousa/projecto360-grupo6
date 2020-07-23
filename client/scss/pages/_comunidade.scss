@@ -1,0 +1,143 @@
+#comunidade {
+  .hero {
+    position: relative;
+    height: 40vh;
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .hero-hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      h1 {
+        color: white;
+        font-size: 34px;
+        font-weight: bold;
+        text-align: center;
+        margin: 3rem 0 2rem;
+      }
+    }
+  }
+  h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 2rem 0 1rem;
+  }
+  .title-description {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+  }
+  /* ----- */
+  /* Glide */
+  /* ----- */
+  .glider-prev {
+    display: none;
+  }
+  .glider-next {
+    display: none;
+  }
+  /* Removes the scrollbar from glider */
+  .glider::-webkit-scrollbar {
+    height: 0px;
+  }
+  /* ---- */
+  /* Card */
+  /* ---- */
+  .card-parent {
+    margin: .5rem;
+  }
+  .card-user-follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: $white;
+    border-radius: 4px;
+    box-shadow: $cards-shadow;
+    padding: 1rem;
+    .user-follow-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      margin-top: .5rem;
+      p:first-of-type {
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .user-score {
+      display: flex;
+      align-items: center;
+      margin-top: .5rem;
+      > p {
+        margin-left: .5rem;
+      }
+      p:first-of-type {
+        color: $conhecedor;
+        font-size: 16px;
+        font-weight: bold;
+      }
+    }
+    .user-info {
+      margin-top: .5rem;
+      font-size: 14px;
+    }
+    > a {
+      color: $primary;
+      font-size: 14px;
+      font-weight: bold;
+      border-bottom: 1px solid $primary;
+      padding-bottom: .3rem;
+      margin-top: 1rem;
+    }
+  }
+  .btn-center {
+    margin: 1rem auto;
+  }
+  /* Glider active color change */
+  .active {
+    background: $primary!important;
+  }
+
+
+
+
+
+
+
+
+  @media(max-width: $tablet) {
+    .hero-image {
+      background-image: url('../images/comunidade/hero-image-mobile.png');
+    }
+  }
+  @media(min-width: $tablet) {
+    .hero {
+      height: 50vh;
+      h1 {
+        font-size: 48px;
+      }
+    }
+    .hero-image {
+      background-image: url('../images/comunidade/hero-image-desktop.png');
+    }
+    /* ----- */
+    /* Glide */
+    /* ----- */
+    .glider-top3 {
+      .glider-dot {
+        display: none;
+        
+      }
+    }
+  }
+}
