@@ -2021,6 +2021,7 @@ ul {
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
+  margin-top: 1rem;
 }
 
 #homepage h5 {
@@ -2052,11 +2053,10 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100px;
 }
 
 #homepage .card-parent {
-  margin: 1rem;
+  margin: .5rem;
 }
 
 #homepage .card {
@@ -2114,6 +2114,13 @@ ul {
   height: auto;
 }
 
+#homepage .card .card-rating {
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
 #homepage .card .card-promotion {
   font-size: 12px;
   font-weight: bold;
@@ -2133,6 +2140,9 @@ ul {
   #homepage .hero h1 {
     font-size: 48px;
   }
+  #homepage h2 {
+    margin: 3rem 0 1rem;
+  }
   #homepage .hero-image {
     background-image: url("../images/homepage/hero-image-desktop.png");
   }
@@ -2141,6 +2151,9 @@ ul {
   }
   #homepage .glider-next {
     display: block;
+  }
+  #homepage .card-parent {
+    margin: 1rem;
   }
 }
 
