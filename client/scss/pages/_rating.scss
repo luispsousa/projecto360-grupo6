@@ -1,0 +1,110 @@
+#scores {
+  .header-score {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 34px;
+      font-weight: bold;
+      margin: 2rem 0;
+    }
+    > p {
+      margin-bottom: 2rem;
+      line-height: 30px;
+    }
+  }
+  table {
+    width: 100%;
+    td {
+      text-align: center;
+      padding: .5rem;
+    }
+    img {
+      margin-right: .5rem;
+    }
+  }
+  h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 4rem 0 1rem;
+  }
+  .flex-center {
+    display: none;
+  }
+  .top-portuense-text {
+    display: flex;
+    align-items: center;
+    p {
+      line-height: 30px;
+      margin-bottom: 4rem;
+    }
+  }
+  .t-left {
+    text-align: left;
+  }
+  .table-title {
+    color: $secondary;
+    font-weight: bold;
+  }
+  .rating-header {
+    color: $white;
+    border-radius: 4px;
+    padding: .5rem;
+    margin-top: 1rem;
+  }
+  .b-novato {
+    background: $novato;
+  }
+  .b-conhecedor {
+    background: $conhecedor;
+  }
+  .b-especialista {
+    background: $especialista;
+  }
+  .b-s_especialista {
+    background: $s_especialista;
+  }
+  .final-score {
+    text-align: left;
+    color: $secondary;
+  }
+  .novato-body {
+    background-color: rgba(117,207,234,0.3);
+  }
+  .conhecedor-body {
+    background-color: rgba(132, 195, 213, 0.3);
+  }
+  .especialista-body {
+    background-color: rgba(98, 146, 169, 0.3);
+  }
+  .s_especialista-body {
+    background-color: rgba(15, 50, 79, 0.3);
+  }
+  .hide {
+    display: none;
+  }
+  @media(min-width: $tablet) {
+    .header-score {
+      > p {
+        padding: 0 20%;
+        font-size: 20px;
+      }
+    }
+    h2 {
+      font-size: 24px;
+    }
+    .flex-center {
+      display: flex;
+      align-items: center;
+    }
+    .hide {
+      display: block;
+    }
+    .top-portuense-text {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}

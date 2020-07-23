@@ -35,9 +35,17 @@
           <a href="/user.html">Iniciar sessão</a>
           <img src="/images/icons/person_outline.svg" alt="Person Icon">
         </div>
-        <img src="/images/icons/menu.svg" alt="Menu icon" class="menu-icon">
+          <a onclick="openMenu(this)"><img src="/images/icons/menu.svg" alt="Menu icon" class="menu-icon"></a>
       </div>
     </nav>
+  <div class="mobile-nav">
+    <ul class="mobile-nav-flex">
+      <li><a href="/signup-categories.html">Categorias</a></li>
+      <li><a href="/rating.html">Pontuação</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+    </ul>
+  </div>
   </header>
   <!-- ******************** -->
   <!-- Main -->
@@ -63,14 +71,14 @@
         <div class="glider-top">
           <div class="card-parent">
             <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
+              <img src="/images/user/avatar-4.png" alt="">
               <div class="user-follow-info">
-                <p>Carolina Neves</p>
+                <p>João Vasconcelos</p>
                 <p>14 seguidores</p>
               </div>
               <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
+                <img src="/images/icons/s_especialista.svg" alt="">
+                <p class="s_especialista">Super Especialista</p>
                 <p>(250 pontos)</p>
               </div>
               <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de experiências novas...</p>
@@ -79,14 +87,14 @@
           </div>
           <div class="card-parent">
             <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
+              <img src="/images/user/avatar-5.png" alt="">
               <div class="user-follow-info">
-                <p>Carolina Neves</p>
+                <p>Silvana Fontes</p>
                 <p>14 seguidores</p>
               </div>
               <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
+                <img src="/images/icons/s_especialista.svg" alt="">
+                <p class="s_especialista">Super Especialista</p>
                 <p>(250 pontos)</p>
               </div>
               <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de experiências
@@ -96,14 +104,14 @@
           </div>
           <div class="card-parent">
             <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
+              <img src="/images/user/avatar-5.png" alt="">
               <div class="user-follow-info">
-                <p>Carolina Neves</p>
+                <p>Andreia Correia</p>
                 <p>14 seguidores</p>
               </div>
               <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
+                <img src="/images/icons/s_especialista.svg" alt="">
+                <p class="s_especialista">Super Especialista</p>
                 <p>(250 pontos)</p>
               </div>
               <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de experiências
@@ -124,14 +132,14 @@
         <div class="glider-sugested-users">
           <div class="card-parent">
             <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
+              <img src="/images/user/avatar-6.png" alt="">
               <div class="user-follow-info">
                 <p>Carolina Neves</p>
                 <p>14 seguidores</p>
               </div>
               <div class="user-score">
                 <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
+                <p class="conhecedor">Conhecedor</p>
                 <p>(250 pontos)</p>
               </div>
               <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
@@ -141,14 +149,14 @@
           </div>
           <div class="card-parent">
             <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
+              <img src="/images/user/avatar-7.png" alt="">
               <div class="user-follow-info">
-                <p>Carolina Neves</p>
+                <p>André Mendonça</p>
                 <p>14 seguidores</p>
               </div>
               <div class="user-score">
                 <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
+                <p class="conhecedor">Conhecedor</p>
                 <p>(250 pontos)</p>
               </div>
               <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
@@ -159,14 +167,14 @@
           </div>
           <div class="card-parent">
             <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
+              <img src="/images/user/avatar-8.png" alt="">
               <div class="user-follow-info">
-                <p>Carolina Neves</p>
+                <p>Silvia Costa</p>
                 <p>14 seguidores</p>
               </div>
               <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
+                <img src="/images/icons/novato.svg" alt="">
+                <p class="novato">Novato</p>
                 <p>(250 pontos)</p>
               </div>
               <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
@@ -185,60 +193,88 @@
       <div class="glider-contain glider-top3">
         <div class="glider-top-lojas">
           <div class="card-parent">
-            <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
-              <div class="user-follow-info">
-                <p>Carolina Neves</p>
-                <p>14 seguidores</p>
+            <div class="card">
+              <img class="imgfit" src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">
+                    <img src="/images/icons/place.svg" alt="">
+                    2,1km | Ribeira
+                  </p>
+                  <p class="card-rating">
+                    Fabuloso
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <span>(2 avaliações)</span>
+                  </p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
               </div>
-              <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
-                <p>(250 pontos)</p>
-              </div>
-              <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
-                experiências novas...</p>
-              <a href="#">Seguir</a>
             </div>
           </div>
           <div class="card-parent">
-            <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
-              <div class="user-follow-info">
-                <p>Carolina Neves</p>
-                <p>14 seguidores</p>
+            <div class="card">
+              <img class="imgfit" src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">
+                    <img src="/images/icons/place.svg" alt="">
+                    2,1km | Ribeira
+                  </p>
+                  <p class="card-rating">
+                    Fabuloso
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <span>(2 avaliações)</span>
+                  </p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
               </div>
-              <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
-                <p>(250 pontos)</p>
-              </div>
-              <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
-                experiências
-                novas...</p>
-              <a href="#">Seguir</a>
             </div>
           </div>
           <div class="card-parent">
-            <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
-              <div class="user-follow-info">
-                <p>Carolina Neves</p>
-                <p>14 seguidores</p>
+            <div class="card">
+              <img class="imgfit" src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">
+                    <img src="/images/icons/place.svg" alt="">
+                    2,1km | Ribeira
+                  </p>
+                  <p class="card-rating">
+                    Fabuloso
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <span>(2 avaliações)</span>
+                  </p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
               </div>
-              <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
-                <p>(250 pontos)</p>
-              </div>
-              <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
-                experiências
-                novas...</p>
-              <a href="#">Seguir</a>
             </div>
           </div>
         </div>
-        <div role="tablist" class="dots"></div>
+        <div role="tablist" class="dots-2"></div>
       </div>
     </div>
     <div class="gridrow">
@@ -247,56 +283,84 @@
       <div class="glider-contain glider-top3">
         <div class="glider-sugested-stores">
           <div class="card-parent">
-            <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
-              <div class="user-follow-info">
-                <p>Carolina Neves</p>
-                <p>14 seguidores</p>
+            <div class="card">
+              <img class="imgfit" src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">
+                    <img src="/images/icons/place.svg" alt="">
+                    2,1km | Ribeira
+                  </p>
+                  <p class="card-rating">
+                    Fabuloso
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <span>(2 avaliações)</span>
+                  </p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
               </div>
-              <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
-                <p>(250 pontos)</p>
-              </div>
-              <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
-                experiências novas...</p>
-              <a href="#">Seguir</a>
             </div>
           </div>
           <div class="card-parent">
-            <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
-              <div class="user-follow-info">
-                <p>Carolina Neves</p>
-                <p>14 seguidores</p>
+            <div class="card">
+              <img class="imgfit" src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">
+                    <img src="/images/icons/place.svg" alt="">
+                    2,1km | Ribeira
+                  </p>
+                  <p class="card-rating">
+                    Fabuloso
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <span>(2 avaliações)</span>
+                  </p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
               </div>
-              <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
-                <p>(250 pontos)</p>
-              </div>
-              <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
-                experiências
-                novas...</p>
-              <a href="#">Seguir</a>
             </div>
           </div>
           <div class="card-parent">
-            <div class="card-user-follow">
-              <img src="/images/user/avatar-2.png" alt="">
-              <div class="user-follow-info">
-                <p>Carolina Neves</p>
-                <p>14 seguidores</p>
+            <div class="card">
+              <img class="imgfit" src="/images/store-card-image.png" alt="">
+              <div class="card-container">
+                <div class="card-header">
+                  <h5 class="card-title">Papelaria e Tipografia Peninsular</h5>
+                  <p class="card-categories">Fotografia, papelaria e gráfica</p>
+                </div>
+                <div class="card-body">
+                  <p class="card-address">
+                    <img src="/images/icons/place.svg" alt="">
+                    2,1km | Ribeira
+                  </p>
+                  <p class="card-rating">
+                    Fabuloso
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <img src="/images/icons/star.svg" alt="">
+                    <span>(2 avaliações)</span>
+                  </p>
+                  <p class="card-promotion">Promoção: 50% em cadernos</p>
+                </div>
               </div>
-              <div class="user-score">
-                <img src="/images/icons/conhecedor.svg" alt="">
-                <p>Conhecedor</p>
-                <p>(250 pontos)</p>
-              </div>
-              <p class="user-info">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
-                experiências
-                novas...</p>
-              <a href="#">Seguir</a>
             </div>
           </div>
         </div>
@@ -425,7 +489,7 @@
       slidesToShow: 1.1,
       slidesToScroll: 1,
       draggable: true,
-      dots: ".dots",
+      dots: ".dots-2",
       responsive: [
         {
           breakpoint: 750,

@@ -97,6 +97,21 @@ ul {
   transform: rotate(45deg);
 }
 
+/* ------------- */
+/* Rating Colors */
+/* ------------- */
+.s_especialista {
+  color: $s_especialista; 
+}
+.novato {
+  color: $novato; 
+}
+.conhecedor {
+  color: $conhecedor; 
+}
+.especialista {
+  color: $especialista; 
+}
 /* Remove padding in mobile */
 @media(max-width: $tablet) {
   .paddingrightfourth {
