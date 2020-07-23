@@ -28,20 +28,42 @@
       }
     }
   }
+  h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  h5 {
+    font-weight: bold;
+  }
   /* ----- */
   /* Glide */
   /* ----- */
+  .glider-prev {
+    display: none;
+  }
+  .glider-next {
+    display:none;
+  }
+  /* Removes the scrollbar from glider */
+  .glider::-webkit-scrollbar {
+    height: 0px;
+  }
   .categories-glider {
     margin: 1rem auto;
+    .glider-slide {
+      min-width: 100px;
+    }
   }
   .category-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100px;
   }
   .card-parent {
-    margin: 1.5rem;
+    margin: 1rem;
   }
 
   .card {
@@ -49,7 +71,7 @@
     border-radius: 4px;
     box-shadow: $cards-shadow;
     
-    img {
+    > img {
       min-width: 100%;
       height: auto;
       object-fit: cover;
@@ -71,7 +93,6 @@
         font-size: 12px;
       }
     }
-
     .card-body {
       background: $white;
       border-radius: 0px 0px 4px 4px;
@@ -85,24 +106,40 @@
         }
       }
     }
+    .card-address {
+      display: flex;
+      align-items: center;
+      img {
+        width: 14px;
+        height: auto;
+      }
+    }
+    .card-promotion {
+      font-size: 12px;
+      font-weight: bold;
+      color: $primary;
+    }
   }
-
   @media(max-width: $tablet) {
     .hero-image {
       background-image: url('../images/homepage/hero-image-mobile.png');
     }
   }
-
   @media(min-width: $tablet) {
     .hero {
       height: 50vh;
-
       h1 {
         font-size: 48px;
       }
     }
     .hero-image {
       background-image: url('../images/homepage/hero-image-desktop.png');
+    }
+    .glider-prev {
+      display: block;
+    }
+    .glider-next {
+      display: block;
     }
   }
 }

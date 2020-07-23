@@ -1983,6 +1983,7 @@ ul {
   /* ----- */
   /* Glide */
   /* ----- */
+  /* Removes the scrollbar from glider */
 }
 
 #homepage .hero {
@@ -2016,8 +2017,34 @@ ul {
   margin: 3rem 0 2rem;
 }
 
+#homepage h2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#homepage h5 {
+  font-weight: bold;
+}
+
+#homepage .glider-prev {
+  display: none;
+}
+
+#homepage .glider-next {
+  display: none;
+}
+
+#homepage .glider::-webkit-scrollbar {
+  height: 0px;
+}
+
 #homepage .categories-glider {
   margin: 1rem auto;
+}
+
+#homepage .categories-glider .glider-slide {
+  min-width: 100px;
 }
 
 #homepage .category-item {
@@ -2025,10 +2052,11 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100px;
 }
 
 #homepage .card-parent {
-  margin: 1.5rem;
+  margin: 1rem;
 }
 
 #homepage .card {
@@ -2037,7 +2065,7 @@ ul {
   box-shadow: 0px 2px 2px rgba(166, 167, 168, 0.48);
 }
 
-#homepage .card img {
+#homepage .card > img {
   min-width: 100%;
   height: auto;
   object-fit: cover;
@@ -2076,6 +2104,22 @@ ul {
   padding-bottom: 1rem;
 }
 
+#homepage .card .card-address {
+  display: flex;
+  align-items: center;
+}
+
+#homepage .card .card-address img {
+  width: 14px;
+  height: auto;
+}
+
+#homepage .card .card-promotion {
+  font-size: 12px;
+  font-weight: bold;
+  color: #1EA0C8;
+}
+
 @media (max-width: 750px) {
   #homepage .hero-image {
     background-image: url("../images/homepage/hero-image-mobile.png");
@@ -2091,6 +2135,12 @@ ul {
   }
   #homepage .hero-image {
     background-image: url("../images/homepage/hero-image-desktop.png");
+  }
+  #homepage .glider-prev {
+    display: block;
+  }
+  #homepage .glider-next {
+    display: block;
   }
 }
 
@@ -2199,12 +2249,26 @@ ul {
   width: 100%;
   max-width: 400px;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signup-page .external-signup .btn-facebook img {
+  margin-right: 1rem;
 }
 
 #signup-page .external-signup .btn-google {
   background: #DB4437 !important;
   width: 100%;
   max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#signup-page .external-signup .btn-google img {
+  margin-right: 1rem;
 }
 
 #signup-page .container-intro {

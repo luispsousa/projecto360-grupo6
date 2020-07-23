@@ -152,7 +152,10 @@
                   <p class="card-categories">Fotografia, papelaria e gráfica</p>
                 </div>
                 <div class="card-body">
-                  <p class="card-address">2,1km | Ribeira</p>
+                  <p class="card-address">
+                    <img src="/images/icons/place.svg" alt="">
+                    2,1km | Ribeira
+                  </p>
                   <p class="card-rating">Fabuloso</p>
                   <p class="card-promotion">Promoção: 50% em cadernos</p>
                 </div>
@@ -230,6 +233,7 @@
         <!-- <div role="tablist" class="dots"></div> -->
       </div>
     </div>
+    
   </main>
   <!-- ******************** -->
   <!-- Mobile Bottom Nav -->
@@ -331,13 +335,13 @@
           settings: {
             slidesToShow: 3,
             slidesToScroll: 1,
-            duration: 0.25
+            duration: 0.25,
           }
         }
       ]
     });
     new Glider(document.querySelector('.glider-categories'), {
-        slidesToShow: 2,
+        slidesToShow: 2.5,
         slidesToScroll: 1,
         draggable: true,
         responsive: [
