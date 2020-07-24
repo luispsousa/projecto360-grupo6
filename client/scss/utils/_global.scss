@@ -114,10 +114,10 @@ ul {
 }
 /* Remove padding in mobile */
 @media(max-width: $tablet) {
-  .paddingrightfourth {
+  .paddingrightfourth, .paddingrighthalf {
     padding-right: 0!important;
   }
-  .paddingleftfourth {
+  .paddingleftfourth, .paddinglefthalf {
     padding-left: 0!important;
   }
 }

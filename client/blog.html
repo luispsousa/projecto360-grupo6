@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop in Porto</title>
+  <link rel="stylesheet" href="./css/glider.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -50,113 +51,72 @@
   <!-- ******************** -->
   <!-- Main -->
   <!-- ******************** -->
-  <main id="user-seguidores">
-    <div class="user-area">
-      <div class="user-header gridrow">
-        <div class="user-avatar">
-          <img src="/images/user/avatar-desktop.png" alt="User Avatar">
-        </div>
-        <div class="user-info">
-          <p class="user-name">André Marques</p>
-          <p class="user-likes">Restauração &middot; Arte &middot; Fotografia</p>
-          <p class="user-description">Nasci em 1987 e sou arquiteto. Vivo na Póvoa do Varzim e trabalho no Porto. Gosto de
-            experiências novas e de conhecer novas pessoas...
-          </p>
-          <a href="#" class="user-edit">
-            <img src="/images/icons/edit_dark.svg" alt="">
-            Editar perfil
-          </a>
-        </div>
-        <div class="user-score">
-          <div>
-            <img src="/images/icons/conhecedor.svg" alt="User badge" class="badge">
-            <div class="user-badge-text">
-              <h3>Conhecedor</h3>
-              <p>850 pontos</p>
-            </div>
-          </div>
-          <p>22 seguidores</p>
-        </div>
-      </div>
-      <div class="user-navigation gridrow">
-        <a href="/user-stores.html" class="nav-item">
-          <img src="/images/icons/local_grocery_store.svg" alt="Shopping Cart Icon">
-          <p>Lojas favoritas</p>
-          <p>13</p>
-        </a>
-        <a href="/user-reviews.html" class="nav-item">
-          <img src="/images/icons/star_rate.svg" alt="Star Icon">
-          <p>Reviews</p>
-          <p>12</p>
-        </a>
-        <a href="/user-roteiros.html" class="nav-item">
-          <img src="/images/icons/map.svg" alt="Map Icon">
-          <p>Roteiros</p>
-          <p>4</p>
-        </a>
-        <a href="/user-checkin.html" class="nav-item">
-          <img src="/images/icons/place.svg" alt="Location Icon">
-          <p>Check Ins</p>
-          <p>9</p>
-        </a>
-        <a href="/user-seguidores.html" class="nav-item active-link">
-          <img src="/images/icons/person.svg" alt="Person Icon">
-          <p>A seguir</p>
-          <p>4</p>
-        </a>
-      </div>
-      </div>
-    </div>
-    <div class="reviews-header gridrow">
-      <h4>A seguir</h4>
-      <div>
-        <p>12 utilizadores</p>
-        <p class="dropdown">Rating <i class="arrow down"></i></p>
+  <main id="blog">
+    <!-- ******************** -->
+    <!-- Hero -->
+    <!-- ******************** -->
+    <div class="gridrowfull hero">
+      <div class="hero-image"></div>
+      <div class="hero-hover">
+        <h1>Blog do melhor comércio local</h1>
       </div>
     </div>
     <div class="gridrow nogutter">
-      <div class="col-12 col-t-6 paddingrightfourth">
-        <div>
-          <div class="card-user">
-            <img src="/images/user/avatar-2.png" alt="">
-            <div class="card-user-info">
-              <h3>Leonor Castro Lopes</h3>
-              <div class="card-user-score">
-                <img src="/images/user/user-badge-2.png" alt="">
-                <p>
-                  <span class="user-score-text">Super Especialista</span> 
-                  <span class="user-score-value">(250 pontos)</span>
-                </p>
-              </div>
+      <div class="col-12 col-t-4 paddingrighthalf">
+        <article class="post-box">
+          <img class="imgfit post-image" src="/images/blog/blog-post-1.jpg" alt="">
+          <header class="post-header">
+            <div class="post-category">
+              Comércio
             </div>
-            <button class="btn btn-secondary">A seguir</button>
+            <p class="post-date">ATUALIZADO EM 20 JUL 2020</p>
+            <h3 class="post-title">Categorias Lojas SIP</h3>
+          </header>
+          <div class="post-content">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+            <a href="#" class="goTo-post">Continuar a ler</a>
           </div>
-        </div>
+        </article>
       </div>
-      <div class="col-12 col-t-6 paddingleftfourth">
-        <div>
-          <div class="card-user">
-            <img src="/images/user/avatar-2.png" alt="">
-            <div class="card-user-info">
-              <h3>Leonor Castro Lopes</h3>
-              <div class="card-user-score">
-                <img src="/images/user/user-badge-2.png" alt="">
-                <p>
-                  <span class="user-score-text">Super Especialista</span>
-                  <span class="user-score-value">(250 pontos)</span>
-                </p>
-              </div>
+      <div class="col-12 col-t-4 paddingleftfourth paddingrightfourth">
+        <article class="post-box">
+          <img class="imgfit post-image" src="/images/blog/blog-post-2.jpg" alt="">
+          <header class="post-header">
+            <div class="post-category">
+              Comércio
             </div>
-            <button class="btn btn-secondary">A seguir</button>
+            <p class="post-date">ATUALIZADO EM 24 JUL 2020</p>
+            <h3 class="post-title">Reviews de influenciadores | comunidade</h3>
+          </header>
+          <div class="post-content">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat...</p>
+            <a href="#" class="goTo-post">Continuar a ler</a>
           </div>
-        </div>
+        </article>
       </div>
-    <div class="gridrow pagination">
-      <button class="btn-pagination active-btn">1</button>
-      <button class="btn-pagination">2</button>
-      <button class="btn-pagination">...</button>
-      <button class="btn-pagination">6</button>
-      <button class="btn-pagination">7</button>
+      <div class="col-12 col-t-4 paddinglefthalf">
+        <article class="post-box">
+          <img class="imgfit post-image" src="/images/blog/blog-post-3.jpg" alt="">
+          <header class="post-header">
+            <div class="post-category">
+              Comércio
+            </div>
+            <p class="post-date">ATUALIZADO EM 27 JUL 2020</p>
+            <h3 class="post-title">Melhores presentes Natal</h3>
+          </header>
+          <div class="post-content">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat...</p>
+            <a href="#" class="goTo-post">Continuar a ler</a>
+          </div>
+        </article>
+      </div>
     </div>
   </main>
   <!-- ******************** -->

@@ -1560,10 +1560,10 @@ ul {
 
 /* Remove padding in mobile */
 @media (max-width: 750px) {
-  .paddingrightfourth {
+  .paddingrightfourth, .paddingrighthalf {
     padding-right: 0 !important;
   }
-  .paddingleftfourth {
+  .paddingleftfourth, .paddinglefthalf {
     padding-left: 0 !important;
   }
 }
@@ -1675,14 +1675,14 @@ ul {
 .mobile-nav-flex {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 10rem;
+  margin-top: 3rem;
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 1s ease;
 }
 
 .mobile-nav-flex li {
+  display: none;
   font-size: 20px;
   color: #FFF;
   padding: 1rem;
@@ -1696,6 +1696,10 @@ ul {
   opacity: 1;
 }
 
+.show > ul > li {
+  display: list-item;
+}
+
 .bottom-navigation {
   position: fixed;
   bottom: 0;
@@ -1703,7 +1707,7 @@ ul {
   right: 0;
   display: flex;
   justify-content: space-around;
-  padding: 1rem 0;
+  padding: .5rem 0;
   background-color: #FFF;
 }
 
@@ -3279,6 +3283,97 @@ ul {
   }
   #scores .top-portuense-text p {
     font-size: 20px;
+  }
+}
+
+#blog .hero {
+  position: relative;
+  height: 40vh;
+}
+
+#blog .hero .hero-image {
+  width: 100%;
+  height: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#blog .hero .hero-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#blog .hero .hero-hover h1 {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  margin: 8rem 0 2rem;
+}
+
+#blog .post-box {
+  margin-top: 3rem;
+}
+
+#blog .post-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+#blog .post-category {
+  display: inline-block;
+  background: #1EA0C8;
+  color: #FFF;
+  font-weight: bold;
+  padding: 4px 8px;
+  margin: .5rem 0;
+  border-radius: 4px;
+}
+
+#blog .post-date {
+  font-size: 12px;
+  margin-bottom: 1rem;
+}
+
+#blog .post-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#blog .post-content {
+  line-height: 1.4;
+}
+
+#blog .goTo-post {
+  display: inline-block;
+  margin: .5rem 0 2rem;
+  color: #1EA0C8;
+  font-weight: bold;
+  border-bottom: 1px solid #1EA0C8;
+}
+
+@media (max-width: 750px) {
+  #blog .hero-image {
+    background-image: url("../images/blog-header.png");
+  }
+}
+
+@media (min-width: 750px) {
+  #blog .hero {
+    height: 50vh;
+  }
+  #blog .hero h1 {
+    font-size: 48px;
+  }
+  #blog .hero-image {
+    background-image: url("../images/blog-header.png");
   }
 }
 /*# sourceMappingURL=styles.css.map */

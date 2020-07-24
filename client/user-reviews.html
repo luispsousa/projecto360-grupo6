@@ -14,14 +14,12 @@
   <!-- ******************** -->
   <header>
     <nav id="navbar">
-      <div class="flex-container">
-        <a href="/user.html" class="arrow left"></a>
-        <ul class="navbar-links-left">
-          <li><a href="#">Lojas</a></li>
-          <li><a href="#">Mapa</a></li>
-          <li><a href="/comunidade.html">Comunidade</a></li>
-        </ul>
-      </div>
+      <ul class="navbar-links-left">
+        <li><a href="#">Lojas</a></li>
+        <li><a href="#">Mapa</a></li>
+        <li><a href="/comunidade.html">Comunidade</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+      </ul>
       <a href="/"><img src="/images/logos/logo-negativo.png" alt="Shop in Porto Logo" class="navbar-logo"></a>
       <div class="navbar-links-right">
         <a href="/signup-categories.html"><img src="/images/icons/search.svg" alt="Search icon"></a>
@@ -37,9 +35,17 @@
           <a href="/user.html">Iniciar sessão</a>
           <img src="/images/icons/person_outline.svg" alt="Person Icon">
         </div>
-        <img src="/images/icons/menu.svg" alt="Menu icon" class="menu-icon">
+        <a onclick="openMenu(this)"><img src="/images/icons/menu.svg" alt="Menu icon" class="menu-icon"></a>
       </div>
     </nav>
+    <div class="mobile-nav">
+      <ul class="mobile-nav-flex">
+        <li><a href="#">Lojas</a></li>
+        <li><a href="#">Mapa</a></li>
+        <li><a href="/blog.html">Blog</a></li>
+        <li><a href="/rating.html">Pontuação</a></li>
+      </ul>
+    </div>
   </header>
   <!-- ******************** -->
   <!-- Main -->
