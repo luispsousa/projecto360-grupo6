@@ -1707,7 +1707,6 @@ ul {
   right: 0;
   display: flex;
   justify-content: space-around;
-  padding: .5rem 0;
   background-color: #FFF;
 }
 
@@ -1717,6 +1716,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: .5rem 0;
 }
 
 .bottom-navigation > a img {

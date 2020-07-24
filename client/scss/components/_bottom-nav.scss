@@ -5,7 +5,6 @@
   right: 0;
   display: flex;
   justify-content: space-around;
-  padding: .5rem 0;
   background-color: $white;
   > a {
     flex: 1;
@@ -13,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: .5rem 0;
     img {
       min-height: 20px;
       object-fit: none;
