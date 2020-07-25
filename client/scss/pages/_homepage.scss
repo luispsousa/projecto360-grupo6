@@ -50,10 +50,17 @@
   .glider::-webkit-scrollbar {
     height: 0px;
   }
+  /* Removes cursor grab */
   .categories-glider {
     margin: 1rem auto;
     .glider-slide {
       min-width: 100px;
+    }
+    .draggable {
+      cursor: pointer;
+    }
+    .drab {
+      cursor: pointer;
     }
   }
   .category-item {

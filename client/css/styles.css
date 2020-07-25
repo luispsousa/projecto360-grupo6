@@ -2045,6 +2045,7 @@ ul {
   /* Glide */
   /* ----- */
   /* Removes the scrollbar from glider */
+  /* Removes cursor grab */
 }
 
 #homepage .hero {
@@ -2107,6 +2108,14 @@ ul {
 
 #homepage .categories-glider .glider-slide {
   min-width: 100px;
+}
+
+#homepage .categories-glider .draggable {
+  cursor: pointer;
+}
+
+#homepage .categories-glider .drab {
+  cursor: pointer;
 }
 
 #homepage .category-item {
@@ -3337,8 +3346,16 @@ ul {
 }
 
 #blog .post-date {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#blog .post-date img {
+  width: 14px;
+  height: auto;
+  margin-right: .2rem;
 }
 
 #blog .post-title {

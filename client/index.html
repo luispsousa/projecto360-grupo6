@@ -390,8 +390,8 @@
           </div>
         </div>
     
-        <button aria-label="Previous" class="glider-prev">«</button>
-        <button aria-label="Next" class="glider-next">»</button>
+        <button aria-label="Previous" class="glider-prev prev-2">«</button>
+        <button aria-label="Next" class="glider-next next-2">»</button>
         <!-- <div role="tablist" class="dots"></div> -->
       </div>
     </div>
@@ -536,8 +536,8 @@
           </div>
         </div>
     
-        <button aria-label="Previous" class="glider-prev">«</button>
-        <button aria-label="Next" class="glider-next">»</button>
+        <button aria-label="Previous" class="glider-prev goLeft">«</button>
+        <button aria-label="Next" class="glider-next goRight">»</button>
         <!-- <div role="tablist" class="dots"></div> -->
       </div>
     </div>
@@ -546,7 +546,7 @@
   <!-- Mobile Bottom Nav -->
   <!-- ******************** -->
   <div class="bottom-navigation">
-    <a href="/">
+    <a href="/" class="active">
       <img src="/images/icons/home.svg" alt="Home Icon">
       <p>Home</p>
     </a>
@@ -652,8 +652,8 @@
         slidesToScroll: 1,
         draggable: true,
         arrows: {
-          prev: '.glider-prev',
-          next: '.glider-next'
+          prev: '.prev-2',
+          next: '.next-2'
         },
         responsive: [
           {
@@ -671,8 +671,8 @@
           slidesToScroll: 1,
           draggable: true,
           arrows: {
-            prev: '.glider-prev',
-            next: '.glider-next'
+            prev: '.goLeft',
+            next: '.goRight'
           },
           responsive: [
             {
