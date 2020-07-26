@@ -3320,10 +3320,17 @@ ul {
 
 #blog .hero .hero-hover h1 {
   color: white;
-  font-size: 34px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   margin: 8rem 0 2rem;
+}
+
+#blog .hero .hero-hover h2 {
+  color: #FFF;
+  font-size: 34px;
+  /* font-weight: bold; */
+  text-align: center;
 }
 
 #blog .post-box {
