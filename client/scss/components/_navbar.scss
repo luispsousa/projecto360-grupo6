@@ -20,6 +20,9 @@
     align-items: center;
   }
   .arrow {
+    border-color: $white;
+  }
+  .goback {
     border: solid $white;
     border-width: 0 2px 2px 0;
     padding: 6px;
@@ -41,7 +44,7 @@
     position: absolute;
     right: 5%;
   }
-  #language {
+  .language {
     display: none;
   }
   .signup-text {
@@ -60,14 +63,19 @@
     .navbar-links-right > *:not(:first-child) {
       margin-left: 2rem;
     }
-    #language {
-      display: inline-block;
+    .language {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > div {
+        margin-left: .4rem;
+      }
     }
     .signup-text {
         display: flex;
         align-items: center;
       }
-    .arrow {
+    .goback {
       display: none;
     }
     .navbar-links-left {

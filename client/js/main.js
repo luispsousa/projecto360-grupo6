@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  
+  fetchStores();
 });
 
-/* const fetchStores = (nProducts, sortBy) => {
-  fetch(`http://localhost:5000/api/getStoresList?nStores=100&sortBy=name`)
+const fetchStores = (nProducts, sortBy) => {
+  fetch(`http://localhost:5000/api/getStoresList?nStores=10&sortBy=name`)
     .then((response) => response.json())
     .then(({ data }) => {
       console.log(data);
     });
-}; */
+};
 const menu = document.getElementsByClassName('mobile-nav')[0];
 const openMenu = (icon) => {
   if (icon.classList.contains('open')) {

@@ -76,7 +76,7 @@
   }
   @media(max-width: $tablet) {
     .hero-image {
-      background-image: url('../images/blog-header.png');
+      background-image: url('../images/blog/blog_capa.jpg');
     }
   }
   @media(min-width: $tablet) {
@@ -87,7 +87,7 @@
       }
     }
     .hero-image {
-      background-image: url('../images/blog-header.png');
+      background-image: url('../images/blog/blog_capa.jpg');
     }
   }
 }

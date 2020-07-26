@@ -1594,6 +1594,10 @@ ul {
 }
 
 #navbar .arrow {
+  border-color: #FFF;
+}
+
+#navbar .goback {
   border: solid #FFF;
   border-width: 0 2px 2px 0;
   padding: 6px;
@@ -1619,7 +1623,7 @@ ul {
   right: 5%;
 }
 
-#navbar #language {
+#navbar .language {
   display: none;
 }
 
@@ -1643,14 +1647,19 @@ ul {
   #navbar .navbar-links-right > *:not(:first-child) {
     margin-left: 2rem;
   }
-  #navbar #language {
-    display: inline-block;
+  #navbar .language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #navbar .language > div {
+    margin-left: .4rem;
   }
   #navbar .signup-text {
     display: flex;
     align-items: center;
   }
-  #navbar .arrow {
+  #navbar .goback {
     display: none;
   }
   #navbar .navbar-links-left {
@@ -3385,7 +3394,7 @@ ul {
 
 @media (max-width: 750px) {
   #blog .hero-image {
-    background-image: url("../images/blog-header.png");
+    background-image: url("../images/blog/blog_capa.jpg");
   }
 }
 
@@ -3397,7 +3406,7 @@ ul {
     font-size: 48px;
   }
   #blog .hero-image {
-    background-image: url("../images/blog-header.png");
+    background-image: url("../images/blog/blog_capa.jpg");
   }
 }
 /*# sourceMappingURL=styles.css.map */

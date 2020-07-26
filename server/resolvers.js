@@ -1,6 +1,20 @@
-const { Stores } = require('./db');
+const { Stores, Categories, Zones } = require('./db');
 
 module.exports = {
+    getCategories: function() {
+        let categories =  [...Categories];
+        return {
+            status: 200,
+            data: categories
+        };
+    },
+    getZones: function() {
+        let zones =  [...Zones];
+        return {
+            status: 200,
+            data: zones
+        };
+    },
     getStores: function (nStores = 10, sortBy='name') {
         let sortedStores =  [...Stores];
         sortBy === 'name' ? 
