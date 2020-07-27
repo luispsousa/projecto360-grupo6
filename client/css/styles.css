@@ -3422,9 +3422,18 @@ ul {
   margin-bottom: 3rem;
 }
 
+#roteiro .imgfit {
+  border-radius: 4px;
+}
+
 #roteiro .flex-container {
   display: flex;
   align-items: center;
+}
+
+#roteiro h3 {
+  font-size: 18px;
+  margin: 2rem 0 1rem;
 }
 
 #roteiro .goBack {
