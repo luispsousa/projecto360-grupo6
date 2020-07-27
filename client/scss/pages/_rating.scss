@@ -84,6 +84,12 @@
   .hide {
     display: none;
   }
+  .table-border-right {
+    border-radius: 0 0 4px 0px;
+  }
+  .table-border-left {
+    border-radius: 0 0 0 4px;
+  }
   @media(min-width: $tablet) {
     .header-score {
       > p {
