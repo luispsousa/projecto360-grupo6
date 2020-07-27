@@ -1,10 +1,22 @@
 #roteiro {
-  .gridrow:last-of-type {
+  .mb {
     margin-bottom: 3rem;
   }
   .flex-container {
     display: flex;
     align-items: center;
+  }
+  .goBack {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    > div {
+      padding: 5px;
+    }
+    > p {
+      font-size: 20px;
+      margin-left: .5rem;
+    }
   }
   .arrows-controller {
     margin-right: .5rem;

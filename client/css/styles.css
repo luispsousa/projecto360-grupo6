@@ -3418,13 +3418,28 @@ ul {
   }
 }
 
-#roteiro .gridrow:last-of-type {
+#roteiro .mb {
   margin-bottom: 3rem;
 }
 
 #roteiro .flex-container {
   display: flex;
   align-items: center;
+}
+
+#roteiro .goBack {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+#roteiro .goBack > div {
+  padding: 5px;
+}
+
+#roteiro .goBack > p {
+  font-size: 20px;
+  margin-left: .5rem;
 }
 
 #roteiro .arrows-controller {
