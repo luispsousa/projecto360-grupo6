@@ -25,7 +25,8 @@
         "../scss/pages/_user-profile.scss",
         "../scss/pages/_comunidade.scss",
         "../scss/pages/_rating.scss",
-        "../scss/pages/_blog.scss"
+        "../scss/pages/_blog.scss",
+        "../scss/pages/_roteiro.scss"
     ],
     "names": [],
     "file": "styles.css"
