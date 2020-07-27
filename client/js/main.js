@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetchStores();
+  /* fetchStores(); */
 });
 
 const fetchStores = (nProducts, sortBy) => {

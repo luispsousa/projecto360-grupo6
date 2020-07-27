@@ -1,0 +1,173 @@
+#roteiro {
+  .gridrow:last-of-type {
+    margin-bottom: 3rem;
+  }
+  .flex-container {
+    display: flex;
+    align-items: center;
+  }
+  .arrows-controller {
+    margin-right: .5rem;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 20px;
+      font-weight: bold;
+      color: $primary;
+      line-height: 30px;
+    }
+  }
+  .categories {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .icons {
+    display: flex;
+    align-self: flex-end;
+  }
+  .roteiro-mapa {
+    > div:first-of-type {
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem 0 .5rem;
+    }
+    .user-rating-icon {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .card-roteiro-footer-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    > div {
+      display: flex;
+    }
+  }
+  .evaluation-stats {
+    display: flex;
+    align-items: center;
+    &:not(:first-of-type) {
+      margin-left: 1rem;
+    }
+  }
+  .card-store {
+    flex: 1;
+    display: flex;
+    box-shadow: $cards-shadow;
+    border-radius: 4px;
+    background: $white;
+    margin-top: 1rem;
+  }
+  .card-store-image {
+    img {
+      max-height: 100px;
+      object-fit: cover;
+    }
+  }
+  .card-store-body {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+  }
+  .store-body-title {
+    h6 {
+      font-size: 12px;
+      font-weight: bold;
+    }
+    p {
+      display: none;
+    }
+  }
+  .store-body-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: .8rem;
+    p {
+      font-size: 12px;
+      &:last-of-type {
+        display: flex;
+        justify-items: center;
+        margin-top: .8rem;
+        img {
+          margin-right: .5rem;
+        }
+      }
+      > span {
+        display: none;
+      }
+    }
+    img {
+      width: 10px;
+      height: auto;
+    }
+  }
+  .store-body-nav {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    > a {
+      display: none;
+    }
+  }
+  @media(min-width: $tablet) {
+    .title {
+      h1 {
+        font-size: 30px;
+        margin-bottom: .5rem;
+      }
+    }
+    .card-store-image {
+      img {
+        max-height: none;
+      }
+    }
+    .store-body-title {
+      h6 {
+        font-size: 18px;
+        line-height: 27px;
+      }
+      p {
+        display: block;
+        font-size: 16px;
+      }
+    }
+    .store-body-info {
+      p {
+        order: 2;
+        &:last-of-type {
+          order: 1;
+          margin-top: 0;
+          margin-bottom: .8rem;
+        }
+        > span {
+          display: inline-block;
+          font-weight: bold;
+        }
+      }
+    }
+    .store-body-nav {
+      position: initial ;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: .8rem;
+      > a {
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 18px;
+        border-bottom: 1px solid $primary;
+        color: $primary;
+      }
+      > img {
+        margin-right: .5rem;
+      }
+    } 
+  }
+}

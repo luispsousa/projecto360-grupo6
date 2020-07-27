@@ -3417,4 +3417,188 @@ ul {
     background-image: url("../images/blog/blog_capa.jpg");
   }
 }
+
+#roteiro .gridrow:last-of-type {
+  margin-bottom: 3rem;
+}
+
+#roteiro .flex-container {
+  display: flex;
+  align-items: center;
+}
+
+#roteiro .arrows-controller {
+  margin-right: .5rem;
+}
+
+#roteiro .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#roteiro .title h1 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1EA0C8;
+  line-height: 30px;
+}
+
+#roteiro .categories {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#roteiro .icons {
+  display: flex;
+  align-self: flex-end;
+}
+
+#roteiro .roteiro-mapa > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 .5rem;
+}
+
+#roteiro .roteiro-mapa .user-rating-icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+#roteiro .card-roteiro-footer-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: .5rem;
+}
+
+#roteiro .card-roteiro-footer-icons > div {
+  display: flex;
+}
+
+#roteiro .evaluation-stats {
+  display: flex;
+  align-items: center;
+}
+
+#roteiro .evaluation-stats:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+#roteiro .card-store {
+  flex: 1;
+  display: flex;
+  box-shadow: 0px 2px 2px rgba(166, 167, 168, 0.48);
+  border-radius: 4px;
+  background: #FFF;
+  margin-top: 1rem;
+}
+
+#roteiro .card-store-image img {
+  max-height: 100px;
+  object-fit: cover;
+}
+
+#roteiro .card-store-body {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+#roteiro .store-body-title h6 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#roteiro .store-body-title p {
+  display: none;
+}
+
+#roteiro .store-body-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: .8rem;
+}
+
+#roteiro .store-body-info p {
+  font-size: 12px;
+}
+
+#roteiro .store-body-info p:last-of-type {
+  display: flex;
+  justify-items: center;
+  margin-top: .8rem;
+}
+
+#roteiro .store-body-info p:last-of-type img {
+  margin-right: .5rem;
+}
+
+#roteiro .store-body-info p > span {
+  display: none;
+}
+
+#roteiro .store-body-info img {
+  width: 10px;
+  height: auto;
+}
+
+#roteiro .store-body-nav {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+}
+
+#roteiro .store-body-nav > a {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  #roteiro .title h1 {
+    font-size: 30px;
+    margin-bottom: .5rem;
+  }
+  #roteiro .card-store-image img {
+    max-height: none;
+  }
+  #roteiro .store-body-title h6 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  #roteiro .store-body-title p {
+    display: block;
+    font-size: 16px;
+  }
+  #roteiro .store-body-info p {
+    order: 2;
+  }
+  #roteiro .store-body-info p:last-of-type {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: .8rem;
+  }
+  #roteiro .store-body-info p > span {
+    display: inline-block;
+    font-weight: bold;
+  }
+  #roteiro .store-body-nav {
+    position: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .8rem;
+  }
+  #roteiro .store-body-nav > a {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    border-bottom: 1px solid #1EA0C8;
+    color: #1EA0C8;
+  }
+  #roteiro .store-body-nav > img {
+    margin-right: .5rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
